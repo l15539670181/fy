@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\ohno\config\mavenLirbrary" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../config/maven/apache-maven-3.6.2" />
+        <option name="userSettingsFile" value="D:\ohno\config\maven\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZFNfSkueuMvOVZcScrSwBzJh4b" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RunManager">
+    <configuration name="FyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="fy" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.fy.fy.FyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+</project>
