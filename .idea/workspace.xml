@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c51d8576-259c-44a2-9529-3703e3b68b29" name="Default Changelist" comment="贾某人">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/2281c3a79459b36bbedc289b352b962e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/aimiliya1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/ceshi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/chunlian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/fense.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/heizi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/leimu1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/tianshi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/xiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/yishijie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/zhonger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/L2Dwidget.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/L2Dwidget.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/TweenMax.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/index.js" afterDir="false" />
+    <list default="true" id="8f35273c-e82c-4565-8dc0-725b4a6b558e" name="Default Changelist" comment="3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/util/DragYzm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static.image/a60a96a8320e94c1b13bb7009e3b24c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/fy_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/fy_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" afterDir="false" />
@@ -106,24 +94,20 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bootstrap_3_3_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bootstrap_3_3_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bowergithub_diguoyihao_layui_2_4_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bowergithub_diguoyihao_layui_2_4_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_1_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/AnimeTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/AnimeTypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Vote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/VotePerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/VotePerson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/AnimeTypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/AnimeTypeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/VoteMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/VoteMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/VotePersonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/VotePersonMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IAnimeTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IAnimeTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IVotePersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IVotePersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IVoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IVoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/AnimeTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/AnimeTypeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/VotePersonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/VotePersonServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/VoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/VoteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/VoteMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VoteMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/UserMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/UserMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/UserMessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/UserMessageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IUserMessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IUserMessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/UserMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/UserMessageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMessageMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,27 +115,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="fy" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -161,9 +129,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\ohno\config\mavenLirbrary" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../config/maven/apache-maven-3.6.2" />
-        <option name="userSettingsFile" value="D:\ohno\config\maven\apache-maven-3.6.2\conf\settings.xml" />
+        <option name="localRepository" value="D:\maven\repository" />
+        <option name="mavenHome" value="D:/StudySoftware/maven/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\StudySoftware\maven\repo\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -188,31 +156,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static.image" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ohno\workspace\Idea\src\main\resources\static\images" />
-      <recent name="D:\ohno\workspace\Idea\src\main\resources\static\js" />
-      <recent name="D:\ohno\workspace\Idea\src\main\resources\static" />
-      <recent name="D:\ohno\workspace\Idea\src\main\resources\static\images\js" />
-      <recent name="D:\ohno\workspace\Idea\src\main\resources\static\images\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ohno\workspace\Idea\src\main\resources\static\images" />
-      <recent name="D:\ohno\workspace\Idea\src\main\resources\static" />
-      <recent name="D:\ohno\workspace\Idea\src\main\resources\images" />
-      <recent name="D:\ohno\workspace\Idea\src\main\resources\templates" />
+      <recent name="E:\IDEA gongzuokongjian\src\main\resources\static.image" />
     </key>
   </component>
   <component name="RunManager">
@@ -224,39 +179,22 @@
       </method>
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c51d8576-259c-44a2-9529-3703e3b68b29" name="Default Changelist" comment="贾某人" />
+      <changelist id="8f35273c-e82c-4565-8dc0-725b4a6b558e" name="Default Changelist" comment="1" />
       <created>1584434914253</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584434914253</updated>
       <workItem from="1584434915881" duration="364000" />
       <workItem from="1584436862759" duration="767000" />
-      <workItem from="1584512494154" duration="7903000" />
-      <workItem from="1584534152808" duration="7233000" />
-      <workItem from="1584579940922" duration="19711000" />
-      <workItem from="1584602486102" duration="2855000" />
-      <workItem from="1584605380394" duration="1725000" />
-      <workItem from="1584607121751" duration="8472000" />
-      <workItem from="1584623988730" duration="3115000" />
-      <workItem from="1584627997848" duration="4038000" />
-      <workItem from="1584632068014" duration="3483000" />
+      <workItem from="1584580239208" duration="33000" />
+      <workItem from="1584581026382" duration="1255000" />
+      <workItem from="1584582387481" duration="36564000" />
+      <workItem from="1584671539195" duration="3273000" />
     </task>
     <servers />
   </component>
@@ -276,100 +214,102 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2" />
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="70" key="#Notifications" timestamp="1584435314507">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="321" y="45" key="#Notifications" timestamp="1584582229707">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="321" y="45" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1584582229707" />
     <state x="361" y="70" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1584435314507" />
-    <state x="704" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1584635396667">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="491" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1584614566919">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="704" y="356" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584635396667" />
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1584629092036">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584629092036" />
+    <state x="491" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584614566919" />
     <state x="614" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584435335618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="614" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1584435335618" />
-    <state x="992" y="478" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584580601429">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="298" y="0" key="CommitChangelistDialog2" timestamp="1584674463281">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="992" y="478" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584580601429" />
-    <state x="270" y="195" key="FileChooserDialogImpl" timestamp="1584635433932">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="298" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584674463281" />
+    <state x="113" y="126" width="1146" height="488" key="DiffContextDialog" timestamp="1584674222170">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="113" y="126" width="1146" height="488" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1584674222170" />
+    <state x="196" y="165" key="FileChooserDialogImpl" timestamp="1584674844206">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="196" y="165" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584674844206" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584435368226" />
-    <state x="270" y="195" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584635433932" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1584635562567">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1286" height="82" key="GridCell.Tab.0.bottom" timestamp="1584671470826">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562567" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1584635562567">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1286" height="82" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584671470826" />
+    <state width="1286" height="82" key="GridCell.Tab.0.center" timestamp="1584671470826">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562567" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1584635562567">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1286" height="82" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584671470826" />
+    <state width="1286" height="82" key="GridCell.Tab.0.left" timestamp="1584671470825">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562567" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1584635562567">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1286" height="82" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584671470825" />
+    <state width="1286" height="82" key="GridCell.Tab.0.right" timestamp="1584671470826">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562567" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1584635562569">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1286" height="82" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584671470826" />
+    <state width="1286" height="82" key="GridCell.Tab.1.bottom" timestamp="1584671470826">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562569" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1584635562567">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1286" height="82" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584671470826" />
+    <state width="1286" height="82" key="GridCell.Tab.1.center" timestamp="1584671470826">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562567" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1584635562567">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1286" height="82" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1584671470826" />
+    <state width="1286" height="82" key="GridCell.Tab.1.left" timestamp="1584671470826">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562567" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1584635562568">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1286" height="82" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1584671470826" />
+    <state width="1286" height="82" key="GridCell.Tab.1.right" timestamp="1584671470826">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562568" />
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1584635562569">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1286" height="82" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1584671470826" />
+    <state x="216" y="29" key="Maven.ArtifactSearchDialog" timestamp="1584674662577">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562569" />
-    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1584635562569">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="216" y="29" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1584674662577" />
+    <state x="132" y="61" key="MergeDialog" timestamp="1584674047145">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562569" />
-    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1584635562569">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="132" y="61" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1584674047145" />
+    <state x="395" y="86" key="MultipleFileMergeDialog" timestamp="1584674075246">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562569" />
-    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1584635562569">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="395" y="86" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1584674075246" />
+    <state x="240" y="12" key="SettingsEditor" timestamp="1584674845603">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584635562569" />
-    <state x="338" y="68" key="SettingsEditor" timestamp="1584635352147">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
+    <state x="240" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584674845603" />
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584435278779" />
-    <state x="338" y="68" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584635352147" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584673391899">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="278" y="106" key="Vcs.Push.Dialog.v2" timestamp="1584674525907">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584673391899" />
-    <state x="737" y="368" key="git4idea.ui.GitUnstashDialog" timestamp="1584439344989">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="278" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584674525907" />
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584671539637">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="737" y="368" key="git4idea.ui.GitUnstashDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584439344989" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1584632357844">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584671539637" />
+    <state x="181" y="0" width="878" height="667" key="dock-window-1" timestamp="1584580709657">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584632357844" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584606146806">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="181" y="0" width="878" height="667" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1584580709657" />
+    <state x="349" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584596572661">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584606146806" />
+    <state x="349" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1584596572661" />
   </component>
 </project>

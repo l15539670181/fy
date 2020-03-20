@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <script src="/webjars/jquery/3.1.1/jquery.js"></script>
+    <script src="/webjars/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            background-image:"fy/src/main/resources/static/image/a60a96a8320e94c1b13bb7009e3b24c.jpg";        }
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+        input{
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 30px;
+        }
+        button{
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 30px;
+            box-sizing: content-box;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+<form action="login" method="post">
+    <input type="text" name="userAdim" placeholder="用户名">
+    <input  type="text" name="userPwd" placeholder="密  码">
+    <button id="login" type="submit">登录</button><button>注册</button>
+</form>
+</div>
+</body>
+<script>
+
+
+    $("#login").click(function(){
+        $.get("index",function(data) {
+                    if(data>0){
+                        alert("登录成功");
+                    }else{
+                        alert("登陆失败");
+                    }
+        },"text");
+    });
+</script>
+</html>

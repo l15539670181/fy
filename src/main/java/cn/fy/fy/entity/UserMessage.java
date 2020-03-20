@@ -32,6 +32,78 @@ public class UserMessage implements Serializable {
 
     private String userAdim;
 
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public Integer getUserType() {
+        return userType;
+    }
+
+    public void setUserType(Integer userType) {
+        this.userType = userType;
+    }
+
+    public String getUserAdim() {
+        return userAdim;
+    }
+
+    public void setUserAdim(String userAdim) {
+        this.userAdim = userAdim;
+    }
+
+    public String getUserPwd() {
+        return userPwd;
+    }
+
+    public void setUserPwd(String userPwd) {
+        this.userPwd = userPwd;
+    }
+
+    public String getUserHead() {
+        return userHead;
+    }
+
+    public void setUserHead(String userHead) {
+        this.userHead = userHead;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public LocalDate getUserRegistration() {
+        return userRegistration;
+    }
+
+    public void setUserRegistration(LocalDate userRegistration) {
+        this.userRegistration = userRegistration;
+    }
+
+    public Double getUserMoney() {
+        return userMoney;
+    }
+
+    public void setUserMoney(Double userMoney) {
+        this.userMoney = userMoney;
+    }
+
+    public Integer getUserVipWhether() {
+        return userVipWhether;
+    }
+
+    public void setUserVipWhether(Integer userVipWhether) {
+        this.userVipWhether = userVipWhether;
+    }
+
     private String userPwd;
 
     private String userHead;
@@ -43,6 +115,11 @@ public class UserMessage implements Serializable {
     private Double userMoney;
 
     private Integer userVipWhether;
+
+
+
+
+
 
 
 }

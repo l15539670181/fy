@@ -95,12 +95,14 @@
             <artifactId>jquery</artifactId>
             <version>3.1.1</version>
         </dependency>
+
+        <!--   //新加依赖StringUtils   -->
         <dependency>
-            <groupId>org.webjars.bowergithub.diguoyihao</groupId>
-            <artifactId>layui</artifactId>
-            <version>2.4.3</version>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
@@ -110,5 +112,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

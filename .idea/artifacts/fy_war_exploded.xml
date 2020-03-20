@@ -71,7 +71,7 @@
           <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.25" />
           <element id="library" level="project" name="Maven: org.webjars:bootstrap:3.3.5" />
           <element id="library" level="project" name="Maven: org.webjars:jquery:3.1.1" />
-          <element id="library" level="project" name="Maven: org.webjars.bowergithub.diguoyihao:layui:2.4.3" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:unknown" />
         </element>
       </element>
       <element id="directory" name="META-INF">
