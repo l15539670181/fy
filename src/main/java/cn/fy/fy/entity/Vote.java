@@ -44,5 +44,65 @@ public class Vote implements Serializable {
 
     private LocalDateTime voteEnd;
 
+    private  VotePerson votePerson;
 
+    public VotePerson getVotePerson() {
+        return votePerson;
+    }
+
+    public void setVotePerson(VotePerson votePerson) {
+        this.votePerson = votePerson;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public Integer getVoteId() {
+        return voteId;
+    }
+
+    public void setVoteId(Integer voteId) {
+        this.voteId = voteId;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public Integer getAnimeId() {
+        return animeId;
+    }
+
+    public void setAnimeId(Integer animeId) {
+        this.animeId = animeId;
+    }
+
+    public String getVoteTitle() {
+        return voteTitle;
+    }
+
+    public void setVoteTitle(String voteTitle) {
+        this.voteTitle = voteTitle;
+    }
+
+    public LocalDateTime getVoteStart() {
+        return voteStart;
+    }
+
+    public void setVoteStart(LocalDateTime voteStart) {
+        this.voteStart = voteStart;
+    }
+
+    public LocalDateTime getVoteEnd() {
+        return voteEnd;
+    }
+
+    public void setVoteEnd(LocalDateTime voteEnd) {
+        this.voteEnd = voteEnd;
+    }
 }

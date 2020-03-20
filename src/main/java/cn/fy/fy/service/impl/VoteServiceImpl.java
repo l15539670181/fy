@@ -6,6 +6,9 @@ import cn.fy.fy.service.IVoteService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+import java.util.List;
+
 /**
  * <p>
  *  服务实现类
@@ -16,5 +19,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class VoteServiceImpl extends ServiceImpl<VoteMapper, Vote> implements IVoteService {
-
+    @Resource
+    private VoteMapper vote;
+    //人气排行
+    @Override
+    public List<Vote> findPersonQi() {
+        return vote.findPersonQi();
+    }
 }

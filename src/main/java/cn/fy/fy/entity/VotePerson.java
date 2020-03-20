@@ -34,4 +34,40 @@ public class VotePerson implements Serializable {
     private Integer userId;
 
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public Integer getVoteId() {
+        return voteId;
+    }
+
+    public void setVoteId(Integer voteId) {
+        this.voteId = voteId;
+    }
+
+    public Integer getVotePersonPersons() {
+        return votePersonPersons;
+    }
+
+    public void setVotePersonPersons(Integer votePersonPersons) {
+        this.votePersonPersons = votePersonPersons;
+    }
+
+    public Double getVotePersonMoney() {
+        return votePersonMoney;
+    }
+
+    public void setVotePersonMoney(Double votePersonMoney) {
+        this.votePersonMoney = votePersonMoney;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
 }
