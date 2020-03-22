@@ -8,7 +8,8 @@
     <script th:src="@{/webjars/layui/src/layui.js}"></script>
     <link rel="stylesheet" th:href="@{/webjars/layui/src/css/layui.css}">
     <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.js}"></script>
-<!--    导航条间距-->
+    <link rel="stylesheet" th:href="@{/css/waifu.css}"/>
+    <!--    导航条间距-->
     <style type="text/css">
         #a{height: 180px}
     </style>
@@ -66,13 +67,32 @@
     }
 </style>
 <body>
+
+<div class="waifu" id="waifu">
+    <div class="waifu-tips" style="opacity: 1;"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+    <div class="waifu-tool">
+        <span class="fui-home"></span>
+        <span class="fui-chat"></span>
+        <span class="fui-eye"></span>
+        <span class="fui-user"></span>
+        <span class="fui-photo"></span>
+        <span class="fui-info-circle"></span>
+        <span class="fui-cross"></span>
+    </div>
+</div>
+<script th:src="@{/js/live2d.js}"></script>
+<script th:src="@{/js/waifu-tips.js}"></script>
+<script type="text/javascript">initModel()</script>
+
 <!--头部-->
 <ul class="layui-nav" id="a"  th:style="'background-image: url('+@{/images/2281c3a79459b36bbedc289b352b962e.png}+');'">
     <li class="layui-nav-item " style=";" >
         <p style="color: pink;font-size: 32px;width: 1300px">爱上Dazzling</p>
     </li>
     <li class="layui-nav-item " lay-unselect="">
-        <a href="javascript:;" style="color: black;font-size: 25px;"><img src="//t.cn/RCzsdCq" class="layui-nav-img">用户名</a>
+        <a th:href="${#httpServletRequest.getContextPath()+'/user-message/login.html'}" style="color: black;font-size: 25px;" th:if="${session.user!=null}" th:text="${session.user.getUserAdim()}"><img src="//t.cn/RCzsdCq" class="layui-nav-img">用户名</a>
+        <a th:href="${#httpServletRequest.getContextPath()+'/user-message/login'}" style="color: black;font-size: 25px;" th:if="${session.user==null}" th:text="登录"><img src="//t.cn/RCzsdCq" class="layui-nav-img">用户名</ a>
         <dl class="layui-nav-child">
             <dd><a href="javascript:;">交易信息</a></dd>
             <dd><a href="javascript:;">投票记录</a></dd>
@@ -141,7 +161,7 @@
                 <button style="display: inline-block;margin-left: 94.1%" value="sc"class="layui-btn layui-btn-normal layui-btn-lg"><i class="layui-icon">&#xe7ae;</i></button>
                 <div class="layui-tab-content">
                     <div class="layui-tab-item layui-show">
-<!--                        商品1-->
+                        <!--                        商品1-->
                         <div style="border: 1px solid burlywood;height: 290px;width: 248px;margin-left: 50px;background: pink">
                             <div style="border: 1px solid darkorange;height: 244px;width: 248px;">
                                 <img th:src="@{/images/leimu1.jpg}"/>
@@ -150,7 +170,7 @@
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 521￥</p></a>
                         </div>
-<!--                        商品2-->
+                        <!--                        商品2-->
                         <div style="border: 1px solid burlywood;height: 290px;width: 248px;margin-left: 348px;margin-top: -289px;background: pink">
                             <div style="border: 1px solid darkorange;height: 244px;width: 248px;">
                                 <img th:src="@{/images/aimiliya1.jpg}"/>
@@ -183,7 +203,7 @@
 
 
 <script type="text/javascript">
-//关于轮播图切图
+    //关于轮播图切图
     layui.use('carousel', function(){
         var carousel = layui.carousel;
         //建造实例
@@ -202,21 +222,22 @@
         });
 
     });
-//关于商品文选项卡
-layui.use('element', function(){
-    var $ = layui.jquery
-        ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+    //关于商品文选项卡
+    layui.use('element', function(){
+        var $ = layui.jquery
+            ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
 
 
-    //Hash地址的定位
-    var layid = location.hash.replace(/^#test=/, '');
-    element.tabChange('test', layid);
+        //Hash地址的定位
+        var layid = location.hash.replace(/^#test=/, '');
+        element.tabChange('test', layid);
 
-    element.on('tab(test)', function(elem){
-        location.hash = 'test='+ $(this).attr('lay-id');
+        element.on('tab(test)', function(elem){
+            location.hash = 'test='+ $(this).attr('lay-id');
+        });
+
     });
-
-});
 </script>
 </body>
 </html>
+<link rel="stylesheet" type="text/css" href="https://files.cnblogs.com/files/yjlblog/flat-ui.min.css"/>

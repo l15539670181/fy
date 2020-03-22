@@ -2,7 +2,11 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Mykaptcha" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/mykaptcha.xml</file>
+        </fileset>
+      </configuration>
     </facet>
     <facet type="web" name="Web">
       <configuration>
@@ -118,6 +122,13 @@
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.12" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:bootstrap:3.3.5" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:jquery:3.1.1" level="project" />
-    <orderEntry type="library" name="Maven: commons-lang:commons-lang:unknown" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars.bowergithub.diguoyihao:layui:2.4.3" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: com.github.whvcse:easy-captcha:1.6.2" level="project" />
+    <orderEntry type="library" name="Maven: com.github.penggle:kaptcha:2.3.2" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.jhlabs:filters:2.0.235-1" level="project" />
   </component>
 </module>

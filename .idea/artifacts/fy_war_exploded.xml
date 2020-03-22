@@ -71,7 +71,14 @@
           <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.25" />
           <element id="library" level="project" name="Maven: org.webjars:bootstrap:3.3.5" />
           <element id="library" level="project" name="Maven: org.webjars:jquery:3.1.1" />
-          <element id="library" level="project" name="Maven: commons-lang:commons-lang:unknown" />
+          <element id="library" level="project" name="Maven: org.webjars.bowergithub.diguoyihao:layui:2.4.3" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: com.github.whvcse:easy-captcha:1.6.2" />
+          <element id="library" level="project" name="Maven: com.github.penggle:kaptcha:2.3.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:4.0.1" />
+          <element id="library" level="project" name="Maven: com.jhlabs:filters:2.0.235-1" />
         </element>
       </element>
       <element id="directory" name="META-INF">

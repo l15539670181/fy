@@ -3,14 +3,28 @@ package cn.fy.fy.controller;
 
 import cn.fy.fy.entity.UserMessage;
 import cn.fy.fy.service.IUserMessageService;
-import cn.fy.fy.service.impl.UserMessageServiceImpl;
+import cn.fy.fy.util.DragYzm;
+import com.alibaba.fastjson.JSONObject;
+import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * <p>
@@ -24,27 +38,88 @@ import javax.annotation.Resource;
 @RequestMapping("/user-message")
 public class UserMessageController {
     @Resource
-    private UserMessageServiceImpl UserMessageService;
+    private IUserMessageService iUserMessageService;
 
-    @RequestMapping("/login.html")
+    @RequestMapping("/login")
     public String login(){
         return "login";
     }
-    @RequestMapping("/login")
-    public String lo(UserMessage userMessage,Model model,String userAdim,String userPwd){
+    @RequestMapping("/lo")
+    public String lo(UserMessage userMessage, HttpSession session,String userAdim, String userPwd){
         userMessage.setUserAdim(userAdim);
         userMessage.setUserPwd(userPwd);
-        UserMessage i= UserMessageService.finduser(userMessage);
-        if(i!=null){
-            model.addAttribute("userMessage",userMessage);
-            return "index";
+        UserMessage user= iUserMessageService.finduser(userMessage);
+        if(user!=null){
+            session.setAttribute("user",user);
+            return "redirect:/anime-type/";
         }else{
             return "login";
         }
     }
-
     @RequestMapping("/index")
     public String index(Model model){
         return "index";
+    }
+
+    @RequestMapping("/zhuce.html")
+    public String zhuce(){
+        return "zhuce";
+    }
+
+    SimpleDateFormat sd = new SimpleDateFormat("yyyy/MM/dd");
+    @RequestMapping("/zhuce")
+    public String tianjia(UserMessage userMessage, @RequestParam(value ="tou", required = false) MultipartFile tou) throws IllegalStateException, IOException {
+        userMessage.setUserType(3);
+        userMessage.setUserRegistration(LocalDate.now());
+        userMessage.setUserMoney(0.0);
+        userMessage.setUserVipWhether(0);
+        if(!tou.isEmpty()) {
+            File directory = new File("");// 参数为空
+            String courseFile = directory.getCanonicalPath();
+            System.out.println("name:"+tou.getOriginalFilename());
+            String oldFileName = tou.getOriginalFilename();
+            userMessage.setUserHead(oldFileName);
+            //后缀名
+            String suffix = FilenameUtils.getExtension(oldFileName);
+            System.out.println("suffix:"+ suffix);
+            if(suffix.equals("png")||suffix.equals("jpg")) {
+                File file = new File(courseFile+"/src/main/resources/static/img",oldFileName);
+                tou.transferTo(file);
+            }
+        }
+        boolean i=iUserMessageService.save(userMessage);
+        if(i==true){
+            return "redirect:index";
+        }else{
+            return " redirect：zhuce.html";
+        }
+
+    }
+
+    @RequestMapping("/yzmServlet")
+    @ResponseBody
+    public String hua(HttpServletResponse response, HttpServletRequest request, String point, String imgname) {
+        Map<String, String> result = new HashMap<String, String>();
+        try {
+            response.setContentType("application/json-rpc;charset=UTF-8");
+            if (StringUtils.isEmpty(point)) { //生成图形验证码
+                if(StringUtils.isEmpty(imgname)) {
+                    imgname = "5.png";
+                }
+                DragYzm resourImg = new DragYzm();
+                result = resourImg.create(request, imgname);
+            } else { //验证验证码
+                Integer location_x = (Integer) request.getSession().getAttribute("location_x");
+                if ((Integer.valueOf(point) < location_x + 4) && (Integer.valueOf(point) > location_x - 4)) {
+                    //说明验证通过，
+                    result.put("data", "success");
+                } else {
+                    result.put("data", "error");
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return JSONObject.toJSONString(result);
     }
 }
