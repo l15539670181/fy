@@ -17,8 +17,4 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 @RequestMapping("/activity")
 public class ActivityController {
-    @RequestMapping("/")
-    public String index(){
-        return "index";
-    }
 }

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f35273c-e82c-4565-8dc0-725b4a6b558e" name="Default Changelist" comment="" />
+    <list default="true" id="8f35273c-e82c-4565-8dc0-725b4a6b558e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/ActivityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/AnimeTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/AnimeTypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/ActivityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/ActivityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/AnimeTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/AnimeTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/UserMessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/UserMessageController.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +128,7 @@
       <workItem from="1584681443955" duration="2177000" />
       <workItem from="1584683656963" duration="11122000" />
       <workItem from="1584758261636" duration="6310000" />
-      <workItem from="1584868203524" duration="5883000" />
+      <workItem from="1584868203524" duration="7509000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1584877105480</created>
@@ -128,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584877105480</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3">
+      <created>1584877133404</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584877133404</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
