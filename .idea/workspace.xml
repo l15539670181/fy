@@ -1,67 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f35273c-e82c-4565-8dc0-725b4a6b558e" name="Default Changelist" comment="3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/KaptchaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/NewKaptchaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mykaptcha.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/waifu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/0c2b63303b68df59ec8e2eae8cef039.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/2e917f904725d4a234aca6a34371589.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/erricon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/loading.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/refresh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/drag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/kaptcha.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/live2d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/waifu-tips.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/zhuce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/fy_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/fy_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/FyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/FyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/util/DragYzm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/util/DragYzm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static.image/a60a96a8320e94c1b13bb7009e3b24c.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/a60a96a8320e94c1b13bb7009e3b24c.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/CodeGenerator$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/CodeGenerator$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/UserMessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/UserMessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/UserMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/UserMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/UserMessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/UserMessageMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IUserMessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IUserMessageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/UserMessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/UserMessageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ActivityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ActivityMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/AnimeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/AnimeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/AnimeNeedMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/AnimeNeedMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/AnimeTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/AnimeTypeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/GiftMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/GiftMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SpitMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/SpitMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StoreDealMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StoreDealMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StoreMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TakeVoteMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TakeVoteMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMessageMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserRechargeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserRechargeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VipMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/VipMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VoteNeedMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/VoteNeedMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VotePersonMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/VotePersonMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="8f35273c-e82c-4565-8dc0-725b4a6b558e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,8 +119,16 @@
       <workItem from="1584681443955" duration="2177000" />
       <workItem from="1584683656963" duration="11122000" />
       <workItem from="1584758261636" duration="6310000" />
-      <workItem from="1584868203524" duration="5634000" />
+      <workItem from="1584868203524" duration="5883000" />
     </task>
+    <task id="LOCAL-00001" summary="3">
+      <created>1584877105480</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584877105480</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
