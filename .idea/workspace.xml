@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f35273c-e82c-4565-8dc0-725b4a6b558e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/config/MyInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/config/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/util/SecurityUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/util/Send.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/fy_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/fy_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteController.class" afterDir="false" />
-    </list>
+    <list default="true" id="8f35273c-e82c-4565-8dc0-725b4a6b558e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +123,7 @@
       <workItem from="1584758261636" duration="6310000" />
       <workItem from="1584868203524" duration="8968000" />
       <workItem from="1584925299954" duration="8953000" />
-      <workItem from="1585016067264" duration="7152000" />
+      <workItem from="1585016067264" duration="7398000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1584877105480</created>
@@ -171,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585019418420</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="5">
+      <created>1585023569778</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585023569778</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
