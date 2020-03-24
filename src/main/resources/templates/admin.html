@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.css}">
+    <script th:src="@{/webjars/layui/src/layui.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/layui/src/css/layui.css}">
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.js}"></script>
+</head>
+<body>
+<table>
+    <table>
+        <tr>
+            <td th:text="${session.user.getUserId()}"></td>
+            <td th:text="${session.user.getUserType()}" > <a th:href="${#httpServletRequest.getContextPath()+'/vote/list'}" th:if="${session.user.userType==1}" th:text="投票管理"  ></a></td>
+            <td th:text="${session.user.getUserAdim()}"></td>
+            <td th:text="${session.user.getUserName()}"></td>
+            <td th:text="${session.user.getUserRegistration()}"></td>
+            <td th:text="${session.user.getUserMoney()}"></td>
+            <td th:text="${session.user.getUserVipWhether()}"></td>
+
+        </tr>
+    </table>
+</table>
+</body>
+</html>

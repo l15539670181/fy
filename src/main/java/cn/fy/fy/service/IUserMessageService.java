@@ -17,4 +17,8 @@ import java.util.List;
  */
 public interface IUserMessageService extends IService<UserMessage> {
     UserMessage finduser(UserMessage userMessage);
+    //为用户充值
+    int chongzhi(Integer id, Double money);
+    //购买东西
+    int buy(Integer id, Double money);
 }

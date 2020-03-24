@@ -12,5 +12,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2020-03-17
  */
 public interface IVoteNeedService extends IService<VoteNeed> {
-
+    //删除
+    int delvoteid(int voteId);
 }

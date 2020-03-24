@@ -1,9 +1,13 @@
 package cn.fy.fy.controller;
 
 
+import cn.fy.fy.service.IVoteNeedService;
+import cn.fy.fy.service.IVoteService;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * <p>
@@ -16,5 +20,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/vote-need")
 public class VoteNeedController {
-
+    @Resource
+    private IVoteNeedService iVoteNeedService;
+    private IVoteService iVoteService;
+    @RequestMapping("del")
+    public String del(int id ){
+        int i=iVoteNeedService.delvoteid(id);
+        if(i>0){
+            int a=iVoteService.chu(id);
+            return "redirect:/vote/list/";
+        }
+        return "redirect:/vote/list/";
+    }
 }

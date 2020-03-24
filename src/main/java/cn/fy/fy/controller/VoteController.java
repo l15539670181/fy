@@ -15,9 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -44,6 +41,12 @@ public class VoteController {
     public String Vote(Model model){
         List<Anime> animeList = iAnimeService.findAnime();
         model.addAttribute("animeList",animeList);
+        return "vote1";
+    }
+    @RequestMapping("list")
+    public String show(Model model){
+        List<Vote> list=iVoteService.list();
+        model.addAttribute("list",list);
         return "vote";
     }
 
@@ -63,7 +66,7 @@ public class VoteController {
             }
             return "redirect:/anime-type/";
         }else {
-            return "/vote";
+            return "vote1";
         }
 
     }

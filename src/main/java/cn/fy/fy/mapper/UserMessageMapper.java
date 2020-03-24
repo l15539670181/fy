@@ -19,4 +19,8 @@ import java.util.List;
 public interface UserMessageMapper extends BaseMapper<UserMessage> {
     //查询用户 登录功能
     UserMessage getuser(UserMessage userMessage);
+    //为用户充值
+    int chongzhi(@Param("id") Integer id, @Param("money") Double money);
+    //购买东西
+    int buy(@Param("id") Integer id, @Param("money") Double money);
 }

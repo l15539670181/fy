@@ -23,4 +23,6 @@ public interface IVoteService extends IService<Vote> {
     int findVote(Vote vote);
 
     int findid(Integer userId);
+    //删除1
+    int chu(int voteId);
 }

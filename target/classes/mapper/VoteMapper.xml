@@ -26,4 +26,8 @@
     <select id="selectid" resultType="int">
         SELECT MAX(vote_id) FROM vote  WHERE user_id=#{userId}
     </select>
+
+    <delete id="shan" parameterType="int">
+        delete from `vote` where `vote_id`=#{voteId}
+    </delete>
 </mapper>

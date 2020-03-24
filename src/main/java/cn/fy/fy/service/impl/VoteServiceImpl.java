@@ -36,4 +36,8 @@ public class VoteServiceImpl extends ServiceImpl<VoteMapper, Vote> implements IV
     public int findid(Integer userId) {
         return vote.selectid(userId);
     }
+    @Override
+    public int chu(int voteId) {
+        return vote.shan(voteId);
+    }
 }

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>来获得超能力吧！</title>
+</head>
+<body>
+<
+<!--    <a th:href="${#httpServletRequest.getContextPath()+'/story/cz?id=1&money=999.0'}">diandedkfjek</a>-->
+    <a th:href="@{/Recharge/cz(id=1,money=999.0)}">充值999</a>
+    <a th:href="@{/Recharge/cz(id=1,money=100.0)}">充值100</a><br>
+    <a th:href="@{/Recharge/buy(id=1,money=99.0)}">测试买东西</a><br>
+    <a th:href="@{/Story/story}">查看商品，不报错就没问题</a><br>
+    <a th:href="@{/Story/storyDD}">看订单</a><br>
+    <a th:href="@{/Story/StoryMine(id=1)}">查看指定订单</a><br>
+</body>
+</html>

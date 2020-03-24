@@ -35,5 +35,57 @@ public class Store implements Serializable {
 
     private Integer storeExit;
 
+    private  String storeName;
 
+    public String getStoreName() {
+        return storeName;
+    }
+
+    public void setStoreName(String storeName) {
+        this.storeName = storeName;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public Integer getStoreId() {
+        return storeId;
+    }
+
+    public void setStoreId(Integer storeId) {
+        this.storeId = storeId;
+    }
+
+    public Double getStorePrice() {
+        return storePrice;
+    }
+
+    public void setStorePrice(Double storePrice) {
+        this.storePrice = storePrice;
+    }
+
+    public Integer getStoreInventory() {
+        return storeInventory;
+    }
+
+    public void setStoreInventory(Integer storeInventory) {
+        this.storeInventory = storeInventory;
+    }
+
+    public String getStoreImg() {
+        return storeImg;
+    }
+
+    public void setStoreImg(String storeImg) {
+        this.storeImg = storeImg;
+    }
+
+    public Integer getStoreExit() {
+        return storeExit;
+    }
+
+    public void setStoreExit(Integer storeExit) {
+        this.storeExit = storeExit;
+    }
 }

@@ -117,4 +117,8 @@ public class UserMessageController {
         }
         return JSONObject.toJSONString(result);
     }
+    @RequestMapping("admin")
+    public String admin(){
+        return "admin";
+    }
 }

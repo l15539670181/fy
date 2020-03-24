@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.fy.fy.mapper.UserMessageMapper">
-    <select id="getuser"  resultType="userMessage">
+    <select id="getuser"  resultType="cn.fy.fy.entity.UserMessage">
         SELECT * FROM user_message WHERE user_adim = #{userAdim} AND user_pwd =#{userPwd}
     </select>
+
+<!--  用户充值  -->
+    <insert id="chongzhi">
+        UPDATE user_message SET user_money=user_money+#{money} WHERE user_id =#{id}
+    </insert>
+<!--  购买东西  -->
+    <insert id="buy">
+        UPDATE user_message SET user_money=user_money-#{money} WHERE user_id =#{id}
+    </insert>
 </mapper>

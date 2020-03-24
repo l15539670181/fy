@@ -22,4 +22,7 @@ public interface VoteMapper extends BaseMapper<Vote> {
     int addVote(Vote vote);
 
     int selectid(@Param("userId") Integer userId);
+
+    //删除1
+    int shan(@Param("voteId") int voteId);
 }

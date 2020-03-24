@@ -6,6 +6,9 @@ import cn.fy.fy.service.IStoreDealService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+import java.util.List;
+
 /**
  * <p>
  *  服务实现类
@@ -16,5 +19,16 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class StoreDealServiceImpl extends ServiceImpl<StoreDealMapper, StoreDeal> implements IStoreDealService {
+    @Resource
+    StoreDealMapper storeDealMapper;
 
+    @Override
+    public List<StoreDeal> FindDeals() {
+        return storeDealMapper.FindDeals();
+    }
+
+    @Override
+    public List<StoreDeal> FindDeal(Integer id) {
+        return storeDealMapper.FindDeal(id);
+    }
 }

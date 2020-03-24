@@ -27,4 +27,16 @@ public class UserMessageServiceImpl extends ServiceImpl<UserMessageMapper, UserM
     public UserMessage finduser(UserMessage userMessage) {
         return userMessageMapper.getuser(userMessage);
     }
+
+    //为用户充值
+    @Override
+    public int chongzhi(Integer id,Double money) {
+        return userMessageMapper.chongzhi(id,money);
+    }
+    //购买东西
+    @Override
+    public int buy(Integer id,Double money) {
+        return userMessageMapper.buy(id,money);
+    }
+
 }

@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.fy.fy.mapper.StoreDealMapper">
-
+<!--  查看全部订单  -->
+    <resultMap id="allDeals" type="cn.fy.fy.entity.StoreDeal">
+        <id column="store_deal_id" property="storeDealId"/>
+        <result column="store_deal" property="storeDeal"/>
+        <result column="user_id" property="userId"/>
+        <result column="store_id" property="storeId"/>
+        <result column="store_deal_quantity" property="storeDealQuantity"/>
+        <result column="store_deal_money" property="storeDealMoney"/>
+        <result column="store_deal_count" property="storeDealCount"/>
+            <association property="store" javaType="cn.fy.fy.entity.Store">
+                <id column="store_id" property="storeId"/>
+                <result column="store_price" property="storePrice"/>
+                <result column="store_inventory" property="storeInventory"/>
+                <result column="store_img" property="storeImg"/>
+                <result column="store_exit" property="storeExit"/>
+                <result column="store_name" property="storeName"/>
+            </association>
+    </resultMap>
+    <select id="FindDeals" resultMap="allDeals">
+        SELECT store_deal.store_deal,store_deal.store_deal_id,store_deal.store_deal_money,store_deal.store_deal_quantity,store_deal.store_id,store_deal.user_id,store_deal.store_deal_count,user_message.user_name,store.store_name
+FROM store_deal,user_message,store
+WHERE store_deal.user_id=user_message.user_id AND store_deal.store_id=store.store_id
+    </select>
+<!--  查看指定订单（用户查看自己）  -->
+    <select id="FindDeal" resultMap="allDeals" parameterType="integer">
+        SELECT store_deal.store_deal,store_deal.store_deal_id,store_deal.store_deal_money,store_deal.store_deal_quantity,store_deal.store_id,store_deal.user_id,store_deal.store_deal_count,user_message.user_name,store.store_name
+FROM store_deal,user_message,store
+WHERE store_deal.user_id=user_message.user_id AND store_deal.store_id=store.store_id AND user_message.user_id=#{id}
+    </select>
 </mapper>
