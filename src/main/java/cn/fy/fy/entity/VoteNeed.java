@@ -32,6 +32,38 @@ public class VoteNeed implements Serializable {
     @TableId(value = "vote_need_id", type = IdType.AUTO)
     private Integer voteNeedId;
 
+    public Integer getVoteId() {
+        return voteId;
+    }
+
+    public void setVoteId(Integer voteId) {
+        this.voteId = voteId;
+    }
+
+    public Integer getVoteNeedId() {
+        return voteNeedId;
+    }
+
+    public void setVoteNeedId(Integer voteNeedId) {
+        this.voteNeedId = voteNeedId;
+    }
+
+    public String getVoteNeedName() {
+        return voteNeedName;
+    }
+
+    public void setVoteNeedName(String voteNeedName) {
+        this.voteNeedName = voteNeedName;
+    }
+
+    public Integer getVoteConditionVotes() {
+        return voteConditionVotes;
+    }
+
+    public void setVoteConditionVotes(Integer voteConditionVotes) {
+        this.voteConditionVotes = voteConditionVotes;
+    }
+
     private String voteNeedName;
 
     private Integer voteConditionVotes;

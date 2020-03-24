@@ -3,6 +3,7 @@ package cn.fy.fy.service;
 import cn.fy.fy.entity.Vote;
 import cn.fy.fy.entity.VotePerson;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -17,4 +18,9 @@ import java.util.List;
 public interface IVoteService extends IService<Vote> {
     //人气排行
     List<Vote> findPersonQi();
+
+    //发起投票
+    int findVote(Vote vote);
+
+    int findid(Integer userId);
 }

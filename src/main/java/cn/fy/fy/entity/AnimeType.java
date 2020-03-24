@@ -24,6 +24,22 @@ public class AnimeType implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    public Integer getAnimeTypeId() {
+        return animeTypeId;
+    }
+
+    public void setAnimeTypeId(Integer animeTypeId) {
+        this.animeTypeId = animeTypeId;
+    }
+
+    public String getAnimeTypeName() {
+        return animeTypeName;
+    }
+
+    public void setAnimeTypeName(String animeTypeName) {
+        this.animeTypeName = animeTypeName;
+    }
+
     @TableId(value = "anime_type_id", type = IdType.AUTO)
     private Integer animeTypeId;
 

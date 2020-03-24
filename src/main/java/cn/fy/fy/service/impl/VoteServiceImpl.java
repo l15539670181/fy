@@ -18,12 +18,22 @@ import java.util.List;
  * @since 2020-03-17
  */
 @Service
-public class VoteServiceImpl extends ServiceImpl<VoteMapper, Vote> implements IVoteService {
+public class VoteServiceImpl extends ServiceImpl<VoteMapper, Vote> implements IVoteService{
     @Resource
     private VoteMapper vote;
     //人气排行
     @Override
     public List<Vote> findPersonQi() {
         return vote.findPersonQi();
+    }
+
+    @Override
+    public int findVote(Vote votes) {
+        return vote.addVote(votes);
+    }
+
+    @Override
+    public int findid(Integer userId) {
+        return vote.selectid(userId);
     }
 }

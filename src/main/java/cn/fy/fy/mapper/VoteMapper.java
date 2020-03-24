@@ -2,6 +2,7 @@ package cn.fy.fy.mapper;
 
 import cn.fy.fy.entity.Vote;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -16,4 +17,9 @@ import java.util.List;
 public interface VoteMapper extends BaseMapper<Vote> {
     //人气排行
     List<Vote> findPersonQi();
+
+    //发起投票
+    int addVote(Vote vote);
+
+    int selectid(@Param("userId") Integer userId);
 }

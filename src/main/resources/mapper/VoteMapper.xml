@@ -17,4 +17,13 @@
             <result column="user_id" property="userId"/>
         </association>
     </resultMap>
+
+    <insert id="addVote" parameterType="cn.fy.fy.entity.Vote">
+        INSERT INTO vote (user_id,anime_id,vote_title,vote_start,vote_end)
+        VALUES (#{userId},#{animeId},#{voteTitle},#{voteStart},#{voteEnd})
+    </insert>
+
+    <select id="selectid" resultType="int">
+        SELECT MAX(vote_id) FROM vote  WHERE user_id=#{userId}
+    </select>
 </mapper>

@@ -2,6 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.fy.fy.mapper.UserMessageMapper">
     <select id="getuser"  resultType="userMessage">
-        SELECT user_adim,user_pwd FROM user_message WHERE user_adim = #{userAdim} AND user_pwd =#{userPwd}
+        SELECT * FROM user_message WHERE user_adim = #{userAdim} AND user_pwd =#{userPwd}
     </select>
 </mapper>

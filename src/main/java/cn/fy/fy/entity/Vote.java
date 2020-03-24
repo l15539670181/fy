@@ -5,9 +5,12 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * <p>
@@ -40,9 +43,9 @@ public class Vote implements Serializable {
 
     private String voteTitle;
 
-    private LocalDateTime voteStart;
+    private Date voteStart;
 
-    private LocalDateTime voteEnd;
+    private Date voteEnd;
 
     private  VotePerson votePerson;
 
@@ -86,23 +89,25 @@ public class Vote implements Serializable {
         return voteTitle;
     }
 
+    public Date getVoteStart() {
+        return voteStart;
+    }
+
+    public void setVoteStart(Date voteStart) {
+        this.voteStart = voteStart;
+    }
+
+    public Date getVoteEnd() {
+        return voteEnd;
+    }
+
+    public void setVoteEnd(Date voteEnd) {
+        this.voteEnd = voteEnd;
+    }
+
     public void setVoteTitle(String voteTitle) {
         this.voteTitle = voteTitle;
     }
 
-    public LocalDateTime getVoteStart() {
-        return voteStart;
-    }
 
-    public void setVoteStart(LocalDateTime voteStart) {
-        this.voteStart = voteStart;
-    }
-
-    public LocalDateTime getVoteEnd() {
-        return voteEnd;
-    }
-
-    public void setVoteEnd(LocalDateTime voteEnd) {
-        this.voteEnd = voteEnd;
-    }
 }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>发起投票</title>
+    <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.css}">
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{/js/kaptcha.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery-1.12.4.js}"></script>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+        input{
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 30px;
+        }
+        select{
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 30px;
+        }
+        button{
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 30px;
+            box-sizing: content-box;
+            border-radius: 10px;
+        }
+        span{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+      <h2>发起投票</h2>
+      <hr>
+      <form th:action="${#httpServletRequest.getContextPath()+'/vote/vote.html'}" method="post">
+          用户名称：<br>
+          <input type="text" disabled="disabled" th:value="${session.user.getUserAdim()}"><br>
+          投票所属番剧：<br>
+          <select  name="animeId">
+              <option value="0">请选择</option>
+              <a href="" th:each="animeList : ${animeList}" >
+                  <option th:value="${animeList.animeId}" th:text="${animeList.animeName}">请选择</option>
+              </a>
+          </select><br>
+          投票标题：<br>
+          <input type="text" name="voteTitle"><br>
+          起始时间：<br>
+          <input type="date" name="voteStart"><br>
+          结束时间：<br>
+          <input type="date" name="voteEnd"><br>
+          投票内容：<br>
+          <input type="text "name="voteNeedName"><br>
+          <input type="text" name="voteNeedName"><br>
+          投票票数：<br>
+          <input type="text" name="voteConditionVotes" value="0"><br>
+          <button type="submit">提交</button><button type="reset">重置</button><br>
+      </form>
+</div>
+</body>
+</html>

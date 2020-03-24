@@ -24,6 +24,30 @@ public class AnimeNeed implements Serializable {
 
     private Integer animeId;
 
+    public Integer getAnimeId() {
+        return animeId;
+    }
+
+    public void setAnimeId(Integer animeId) {
+        this.animeId = animeId;
+    }
+
+    public String getAnimeMessagePicture() {
+        return animeMessagePicture;
+    }
+
+    public void setAnimeMessagePicture(String animeMessagePicture) {
+        this.animeMessagePicture = animeMessagePicture;
+    }
+
+    public String getAnimeMessageIntroduce() {
+        return animeMessageIntroduce;
+    }
+
+    public void setAnimeMessageIntroduce(String animeMessageIntroduce) {
+        this.animeMessageIntroduce = animeMessageIntroduce;
+    }
+
     private String animeMessagePicture;
 
     private String animeMessageIntroduce;
