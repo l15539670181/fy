@@ -38,7 +38,7 @@ public class AnimeTypeController {
     @Resource
     private VoteServiceImpl apl2;
 //   分类+人气排行榜+活动榜
-    @RequestMapping("/")
+    @RequestMapping("/list")
     public String yemian(Model model)throws Exception{
         //分类
         List<AnimeType> listAnimeType = apl.list();

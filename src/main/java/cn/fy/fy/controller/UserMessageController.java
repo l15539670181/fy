@@ -51,16 +51,11 @@ public class UserMessageController {
         UserMessage user= iUserMessageService.finduser(userMessage);
         if(user!=null){
             session.setAttribute("user",user);
-            return "redirect:/anime-type/";
+            return "redirect:/";
         }else{
-            return "login";
+            return "redirect:login";
         }
     }
-    @RequestMapping("/index")
-    public String index(Model model){
-        return "index";
-    }
-
     @RequestMapping("/zhuce.html")
     public String zhuce(){
         return "zhuce";
@@ -89,7 +84,7 @@ public class UserMessageController {
         }
         boolean i=iUserMessageService.save(userMessage);
         if(i==true){
-            return "redirect:index";
+            return "redirect:/";
         }else{
             return " redirect：zhuce.html";
         }
