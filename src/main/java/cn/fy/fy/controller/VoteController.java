@@ -64,7 +64,7 @@ public class VoteController {
                 voteNeed.setVoteConditionVotes(voteConditionVotes);
                 iVoteNeedService.save(voteNeed);
             }
-            return "redirect:/anime-type/";
+            return "redirect:/anime-type/list/";
         }else {
             return "vote1";
         }
