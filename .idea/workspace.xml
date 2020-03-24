@@ -2,91 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f35273c-e82c-4565-8dc0-725b4a6b558e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/vote.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Story.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/chongzhi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/vote1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/StoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VipController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteNeedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteNeedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/StoreDeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/StoreDeal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Vip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Vip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/StoreDealMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/StoreDealMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/UserMessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/UserMessageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/VoteMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/VoteMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/VoteNeedMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/VoteNeedMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IStoreDealService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IStoreDealService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IUserMessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IUserMessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IVoteNeedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IVoteNeedService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IVoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IVoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/StoreDealServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/StoreDealServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/UserMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/UserMessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/VoteNeedServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/VoteNeedServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/VoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/VoteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StoreDealMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StoreDealMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMessageMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/VoteMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VoteMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/VoteNeedMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VoteNeedMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/vote.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/vote.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/CodeGenerator$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/CodeGenerator$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/CodeGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/FyApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/ServletInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/ActivityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/AnimeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/AnimeNeedController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/StoreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/StoreController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/StoreDealController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/TakeVoteController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/UserMessageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VipController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteNeedController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VotePersonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/StoreDeal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/StoreDeal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/Vip.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/Vip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/AnimeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/AnimeNeedMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/AnimeTypeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/StoreDealMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/StoreDealMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/StoreMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/TakeVoteMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/UserMessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/UserMessageMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/UserRechargeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/VoteMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/VoteMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/VoteNeedMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/VotePersonMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IAnimeNeedService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IStoreDealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IStoreDealService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IUserMessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IUserMessageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IUserRechargeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IVoteNeedService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IVoteNeedService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IVotePersonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IVoteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IVoteService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/AnimeNeedServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/AnimeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/AnimeTypeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/StoreDealServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/StoreDealServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/StoreServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/TakeVoteServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/UserMessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/UserMessageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/UserRechargeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/VoteNeedServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/VotePersonServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/VoteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/VoteServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StoreDealMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StoreDealMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMessageMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VoteMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/VoteMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VoteNeedMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/VoteNeedMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/vote.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,6 +73,7 @@
       <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\idea\fy\src\main\resources\templates" />
       <recent name="E:\Projects\idea\fy\src\main\resources\static\css" />
       <recent name="E:\Projects\idea\fy\src\main\resources\static\images" />
     </key>
@@ -207,7 +124,7 @@
       <workItem from="1584758261636" duration="6310000" />
       <workItem from="1584868203524" duration="8968000" />
       <workItem from="1584925299954" duration="8953000" />
-      <workItem from="1585016067264" duration="3092000" />
+      <workItem from="1585016067264" duration="3343000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1584877105480</created>
@@ -230,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584878769109</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="5">
+      <created>1585019328501</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585019328501</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +178,8 @@
     <MESSAGE value="2" />
     <MESSAGE value="3" />
     <MESSAGE value="4" />
-    <option name="LAST_COMMIT_MESSAGE" value="4" />
+    <MESSAGE value="5" />
+    <option name="LAST_COMMIT_MESSAGE" value="5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="321" y="45" key="#Notifications" timestamp="1584582229707">
