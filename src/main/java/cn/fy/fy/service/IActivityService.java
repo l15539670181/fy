@@ -12,5 +12,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2020-03-17
  */
 public interface IActivityService extends IService<Activity> {
-
+   int findActivity(Integer activityId);
 }

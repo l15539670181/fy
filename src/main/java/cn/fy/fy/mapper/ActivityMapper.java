@@ -2,6 +2,7 @@ package cn.fy.fy.mapper;
 
 import cn.fy.fy.entity.Activity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * <p>
@@ -12,5 +13,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2020-03-17
  */
 public interface ActivityMapper extends BaseMapper<Activity> {
-
+     int deleteActicity(@Param("activityId") Integer activityId);
 }

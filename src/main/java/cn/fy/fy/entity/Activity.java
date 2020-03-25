@@ -31,5 +31,27 @@ public class Activity implements Serializable {
 
     private String activityAward;
 
+    public Integer getActivityId() {
+        return activityId;
+    }
 
+    public void setActivityId(Integer activityId) {
+        this.activityId = activityId;
+    }
+
+    public String getActivityName() {
+        return activityName;
+    }
+
+    public void setActivityName(String activityName) {
+        this.activityName = activityName;
+    }
+
+    public String getActivityAward() {
+        return activityAward;
+    }
+
+    public void setActivityAward(String activityAward) {
+        this.activityAward = activityAward;
+    }
 }
