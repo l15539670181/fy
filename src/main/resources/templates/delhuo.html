@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>管理活动</title>
+</head>
+<body>
+<table>
+    <tr th:each="listActivity : ${listActivity}">
+        <a th:text="${listActivity.activityName}" href="" style="font-size: 20px;color: deeppink;margin: 20%"></a>
+        <a th:href="${#httpServletRequest.getContextPath()+'/activity/delhuo.html/?activityId='+listActivity.activityId}">删除</a>
+    </tr>
+</table>
+</body>
+</html>
