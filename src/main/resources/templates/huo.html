@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>发布活动</title>
+    <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.css}">
+    <script th:src="@{/webjars/layui/src/layui.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/layui/src/css/layui.css}">
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.js}"></script>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+        input{
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 30px;
+        }
+        button{
+            width: 298px;
+            height: 30px;
+            border: 1px solid black;
+            margin-top: 30px;
+            box-sizing: content-box;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form th:action="${#httpServletRequest.getContextPath()+'/activity/huo.html'}" method="post">
+    <input type="text" name="activityName" placeholder="活动名称" id="name"><span class="dong"></span><br>
+    <input type="text" name="activityAward" placeholder="活动介绍" id="award"><span class="dong"></span><br>
+    <button type="submit" id="fa">发起投票</button>
+    </form>
+</div>
+<script>
+    $(function () {
+        $("#fa").click(function () {
+             var name=$("#name").val();
+             var award=$("#award").val();
+             if(name!=null && award!=null || name!='' && award!='' ){
+                 $(".dong").hide();
+             }else{
+                 $(".dong").html("不能为空");
+                 return false;
+
+             }
+        })
+    })
+</script>
+</body>
+</html>
