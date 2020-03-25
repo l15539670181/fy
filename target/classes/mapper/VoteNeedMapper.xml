@@ -2,6 +2,34 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.fy.fy.mapper.VoteNeedMapper">
     <delete id="delvoteid" parameterType="int">
-        DELETE FROM `vote_need` WHERE `vote_id`=#{vote_id}
+        DELETE FROM `vote_need` WHERE `vote_id`=#{voteId}
     </delete>
+
+
+<!--    主页人气排行榜跳转-->
+    <select id="voteneed"  resultMap="find">
+        SELECT vote_need.vote_need_name,vote_need.vote_condition_votes,vote.vote_title
+        FROM vote_need,vote
+        WHERE vote.vote_id= vote_need.vote_id AND vote.vote_id=#{id}
+    </select>
+    <resultMap id="find" type="cn.fy.fy.entity.VoteNeed">
+        <id column="vote_id" property="voteId"/>
+        <result column="vote_need_id" property="voteNeedId"/>
+        <result column="vote_need_name" property="voteNeedName"/>
+        <result column="vote_condition_votes" property="voteConditionVotes"/>
+        <association property="vote" javaType="cn.fy.fy.entity.Vote">
+            <id column="vote_id" property="voteId"/>
+            <result column="user_id" property="userId"/>
+            <result column="anime_id" property="animeId"/>
+            <result column="vote_title" property="voteTitle"/>
+            <result column="vote_start" property="voteStart"/>
+            <result column="vote_end" property="voteEnd"/>
+            <association property="votePerson" javaType="cn.fy.fy.entity.VotePerson">
+                <id column="vote_id" property="voteId"></id>
+                <result column="vote_person_persons" property="votePersonPersons"/>
+                <result column="vote_person_money" property="votePersonMoney"/>
+                <result column="user_id" property="userId"/>
+            </association>
+        </association>
+    </resultMap>
 </mapper>

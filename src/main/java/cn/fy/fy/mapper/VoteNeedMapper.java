@@ -4,6 +4,8 @@ import cn.fy.fy.entity.VoteNeed;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 /**
  * <p>
  *  Mapper 接口
@@ -15,5 +17,7 @@ import org.apache.ibatis.annotations.Param;
 public interface VoteNeedMapper extends BaseMapper<VoteNeed> {
     //删除
     int delvoteid(@Param("voteId") int voteId);
+    //主页人气排行榜跳转
+    List<VoteNeed> voteneed(@Param("id") Integer id);
 
 }

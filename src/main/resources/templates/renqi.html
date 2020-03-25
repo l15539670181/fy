@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <span th:text="${voteNeeds.get(0).vote.voteTitle}"></span>
+    <table>
+        <tr>
+            <td>选项</td>
+            <td>该选项人气</td>
+        </tr>
+        <tr th:each="voteNeeds:${voteNeeds}">
+            <td th:text="${voteNeeds.voteNeedName}"></td>
+            <td th:text="${voteNeeds.voteConditionVotes}"></td>
+        </tr>
+    </table>
+</body>
+</html>

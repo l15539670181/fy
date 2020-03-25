@@ -2,7 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f35273c-e82c-4565-8dc0-725b4a6b558e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/buy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/dingdan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/renqi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/StoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VipController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteNeedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteNeedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/VoteNeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/VoteNeed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/VoteNeedMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/VoteNeedMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IVoteNeedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IVoteNeedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/VoteNeedServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/VoteNeedServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StoreDealMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StoreDealMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/VoteMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VoteMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/VoteNeedMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VoteNeedMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/aimiliya1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/1584345699(1).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/leimu1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/1584345815(1).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Story.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Story.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chongzhi.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chongzhi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/vote.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/vote.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/StoreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/StoreController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VipController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VipController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteNeedController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteNeedController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/VoteNeed.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/VoteNeed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/VoteNeedMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/VoteNeedMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IVoteNeedService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IVoteNeedService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/VoteNeedServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/VoteNeedServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StoreDealMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StoreDealMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VoteMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/VoteMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VoteNeedMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/VoteNeedMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/aimiliya1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/leimu1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +91,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/cn/fy/fy/util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,10 +102,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\util" />
-      <recent name="E:\Projects\idea\fy\src\main\resources\mapper" />
-      <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\mapper" />
+      <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\entity" />
       <recent name="E:\Projects\idea\fy\src\main\resources\templates" />
+      <recent name="E:\Projects\idea\fy\src\main\resources\mapper" />
+      <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\service" />
       <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\service\impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -125,7 +161,8 @@
       <workItem from="1584758261636" duration="6310000" />
       <workItem from="1584868203524" duration="8968000" />
       <workItem from="1584925299954" duration="8953000" />
-      <workItem from="1585016067264" duration="8213000" />
+      <workItem from="1585016067264" duration="16978000" />
+      <workItem from="1585106280638" duration="277000" />
     </task>
     <task id="LOCAL-00001" summary="3">
       <created>1584877105480</created>
@@ -176,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585023889930</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="5">
+      <created>1585025121493</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585025121493</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

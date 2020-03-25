@@ -18,6 +18,17 @@
                 <result column="store_exit" property="storeExit"/>
                 <result column="store_name" property="storeName"/>
             </association>
+        <association property="userMessage" javaType="cn.fy.fy.entity.UserMessage">
+            <id column="user_id" property="userId"/>
+            <result column="user_type" property="userType"/>
+            <result column="user_adim" property="userAdim"/>
+            <result column="user_pwd" property="userPwd"/>
+            <result column="user_head" property="userHead"/>
+            <result column="user_name" property="userName"/>
+            <result column="user_registration" property="userRegistration"/>
+            <result column="user_money" property="userMoney"/>
+            <result column="user_vip_whether" property="userVipWhether"/>
+        </association>
     </resultMap>
     <select id="FindDeals" resultMap="allDeals">
         SELECT store_deal.store_deal,store_deal.store_deal_id,store_deal.store_deal_money,store_deal.store_deal_quantity,store_deal.store_id,store_deal.user_id,store_deal.store_deal_count,user_message.user_name,store.store_name

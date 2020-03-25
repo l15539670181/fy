@@ -11,10 +11,10 @@
 </head>
 <body>
 <table>
-    <table>
         <tr>
             <td th:text="${session.user.getUserId()}"></td>
-            <td th:text="${session.user.getUserType()}" > <a th:href="${#httpServletRequest.getContextPath()+'/vote/list'}" th:if="${session.user.userType==1}" th:text="投票管理"  ></a></td>
+            <td th:text="${session.user.getUserType()}" ></td>
+            <td><a th:href="${#httpServletRequest.getContextPath()+'/vote/list'}" th:if="${session.user.userType==1}" th:text="投票管理"  >投票管理</a></td>
             <td th:text="${session.user.getUserAdim()}"></td>
             <td th:text="${session.user.getUserName()}"></td>
             <td th:text="${session.user.getUserRegistration()}"></td>
@@ -22,7 +22,6 @@
             <td th:text="${session.user.getUserVipWhether()}"></td>
 
         </tr>
-    </table>
 </table>
 </body>
 </html>

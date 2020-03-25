@@ -14,7 +14,7 @@
         <tr th:each="list:${list}">
 
             <td th:text="${list.voteTitle}"></td>
-            <a th:href="${#httpServletRequest.getContextPath()+'/vote-need/del/?id='+list.getVoteId()}" >删除</a>
+            <td><a th:href="${#httpServletRequest.getContextPath()+'/vote-need/del/?id='+list.getVoteId()}" >删除</a></td>
         </tr>
     </table>
 </body>

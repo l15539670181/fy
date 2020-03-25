@@ -33,21 +33,21 @@ public class StoreController {
     public String Story(Model model){
         List<Store> ListStory = Storys.list();
         model.addAttribute("ListStory",ListStory);
-        return "index";
+        return "Story";
     }
     //查看所有订单信息
     @RequestMapping("/storyDD")
     public String storyDD(Model model){
         List<StoreDeal> StoryDD = DelStorys.FindDeals();
         model.addAttribute("StoryDD",StoryDD);
-        return "index";
+        return "dingdan";
     }
     //查看指定订单（用户查看自己）
     @RequestMapping("/StoryMine")
     public String StoryMine(Model model,Integer id){
         List<StoreDeal> StoryMin = DelStorys.FindDeal(id);
         model.addAttribute("StoryMin",StoryMin);
-        return "index";
+        return "redirect:/";
     }
     //添加商品
     @RequestMapping("/tjwp")

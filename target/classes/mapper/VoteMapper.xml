@@ -3,7 +3,7 @@
 <mapper namespace="cn.fy.fy.mapper.VoteMapper">
     <!--  人气排行榜  -->
     <select id="findPersonQi" resultMap="renqi">
-        SELECT DISTINCT vote.vote_title FROM vote,vote_person WHERE vote.user_id=vote_person.user_id ORDER BY vote_person.vote_person_persons
+        SELECT DISTINCT vote.vote_title,vote.vote_id FROM vote,vote_person WHERE vote.user_id=vote_person.user_id ORDER BY vote_person.vote_person_persons
     </select>
     <resultMap id="renqi" type="cn.fy.fy.entity.Vote">
         <id column="anime_id" property="animeId"></id>

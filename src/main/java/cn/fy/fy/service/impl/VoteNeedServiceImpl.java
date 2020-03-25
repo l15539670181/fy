@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * <p>
@@ -20,9 +21,12 @@ import javax.annotation.Resource;
 public class VoteNeedServiceImpl extends ServiceImpl<VoteNeedMapper, VoteNeed> implements IVoteNeedService {
     @Resource
     private  VoteNeedMapper voteNeedMapper;
-    @Override
     //删除
     public int delvoteid(int voteId) {
         return voteNeedMapper.delvoteid(voteId);
+    }
+    //主页人气排行榜跳转
+    public List<VoteNeed> voteneed(Integer id) {
+        return voteNeedMapper.voteneed(id);
     }
 }

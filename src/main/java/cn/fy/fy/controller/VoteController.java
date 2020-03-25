@@ -45,7 +45,7 @@ public class VoteController {
     }
     @RequestMapping("list")
     public String show(Model model){
-        List<Vote> list=iVoteService.list();
+        List<Vote> list=iVoteService.findPersonQi();
         model.addAttribute("list",list);
         return "vote";
     }

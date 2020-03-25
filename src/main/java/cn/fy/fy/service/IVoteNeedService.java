@@ -2,6 +2,9 @@ package cn.fy.fy.service;
 
 import cn.fy.fy.entity.VoteNeed;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * <p>
@@ -14,4 +17,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface IVoteNeedService extends IService<VoteNeed> {
     //删除
     int delvoteid(int voteId);
+    //主页人气排行榜跳转
+    List<VoteNeed> voteneed(Integer id);
 }

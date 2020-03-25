@@ -68,5 +68,13 @@ public class VoteNeed implements Serializable {
 
     private Integer voteConditionVotes;
 
+    private Vote vote;
 
+    public Vote getVote() {
+        return vote;
+    }
+
+    public void setVote(Vote vote) {
+        this.vote = vote;
+    }
 }

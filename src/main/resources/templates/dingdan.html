@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>订单id</td>
+            <td>商品名字</td>
+            <td>用户名字</td>
+            <td>购买数量</td>
+            <td>数量</td>
+            <td>花费</td>
+        </tr>
+        <tr th:each="StoryDD:${StoryDD}">
+            <td th:text="${StoryDD.storeDealId}"></td>
+            <td th:text="${StoryDD.store.storeName}"></td>
+            <td th:text="${StoryDD.userMessage.userName}"></td>
+            <td th:text="${StoryDD.storeId}"></td>
+            <td th:text="${StoryDD.storeDealQuantity}"></td>
+            <td th:text="${StoryDD.storeDealMoney}"></td>
+        </tr>
+    </table>
+</body>
+</html>

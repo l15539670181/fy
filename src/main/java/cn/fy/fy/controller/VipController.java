@@ -36,9 +36,7 @@ public class VipController {
     //购买东西
     @RequestMapping("buy")
     public String buy(Integer id,Double money){
-        Integer ii =1;
-        Double aa=333.0;
-        int i = userMessage.buy(ii,aa);
-        return  "index";
+        int i = userMessage.buy(id,money);
+        return  "buy";
     }
 }

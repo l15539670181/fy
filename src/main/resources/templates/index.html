@@ -8,7 +8,7 @@
     <script th:src="@{/webjars/layui/src/layui.js}"></script>
     <link rel="stylesheet" th:href="@{/webjars/layui/src/css/layui.css}">
     <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.js}"></script>
-    <link rel="stylesheet" th:href="@{/css/waifu.css}"/>
+    <link rel="stylesheet" th:href="${#httpServletRequest.getContextPath()+'/css/waifu.css'}"/>
     <!--    导航条间距-->
     <style type="text/css">
         #a{height: 180px}
@@ -138,7 +138,7 @@
             <table>
                 <span style="font-size: 40px;margin-left: 15%">人气排行榜</span><br>
                 <tr th:each="Vote : ${listVotePerson}">
-                    <a th:text="${Vote.voteTitle}" style="font-size: 20px;color: deeppink;margin-left: 60px;" href=""></a></br></br>
+                    <a th:text="${Vote.voteTitle}" style="font-size: 20px;color: deeppink;margin-left: 60px;" th:href="@{/vote-need/rq(id=${Vote.voteId})}"></a></br></br>
                 </tr>
             </table>
         </div>
@@ -164,7 +164,7 @@
                         <!--                        商品1-->
                         <div style="border: 1px solid burlywood;height: 290px;width: 248px;margin-left: 50px;background: pink">
                             <div style="border: 1px solid darkorange;height: 244px;width: 248px;">
-                                <img th:src="@{/images/leimu1.jpg}"/>
+                                <img th:src="@{/images/1584345815(1).jpg}"/>
                             </div>
                             <a href="" style="color: black">从零开始的异世界生活-雷姆手办</br><p style="color: darkorange;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -173,7 +173,7 @@
                         <!--                        商品2-->
                         <div style="border: 1px solid burlywood;height: 290px;width: 248px;margin-left: 348px;margin-top: -289px;background: pink">
                             <div style="border: 1px solid darkorange;height: 244px;width: 248px;">
-                                <img th:src="@{/images/aimiliya1.jpg}"/>
+                                <img th:src="@{/images/1584345699(1).jpg}"/>
                             </div>
                             <a href="" style="color: black">从零开始的异世界生活-艾莉米娅手办</br><p style="color: darkorange;align-content: center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
