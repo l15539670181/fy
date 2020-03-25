@@ -76,7 +76,7 @@
         <div class="form-item">
             <label id="mm">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
             <input id="userpass" name="userPwd" placeholder="请输入密码"  type= "password"   autocomplete="off"  /><br>
-            <input type="button" value="获取验证码" id="yan">
+            <a onclick="yan()" id="yan">获取验证码</a>
         </div>
         <div class="form-item">
             <div class="yzm">
@@ -99,7 +99,8 @@
         </div>
 
         <div class="form-item">
-            <input type="button" style="height: 50px;line-height: 50px;" class="btm" value="登  录" onclick="login()"><br>
+            <input type="button" style="height: 50px;line-height: 50px;" id="login1" class="btm" value="登  录" onclick="login()"><br>
+            <input type="button" style="height: 50px;line-height: 50px;" id="login2" class="btm" value="登  录" onclick="yandeng()" hidden="hidden"><br>
             <a th:href="${#httpServletRequest.getContextPath()+'/user-message/zhuce.html'}">还没有账号?点击注册</a>
             <a onclick="qie()">手机号登录</a>
             <a href="" hidden="hidden" id="yhdl" onclick="huan()">用户登录</a>
@@ -182,13 +183,43 @@
             return true;
         }
     }
+    var num=0;
+    function yan() {
+        num= Math.floor(Math.random()*9999+1);
+        alert(num);
+        /*$.get("UserServlet?opr=send","&num="+num+"&shouji="+$("#username").val(),shu);
+        function shu(data){
+            if(data==-4){
+                alert("手机格式不正确");
+            }else if(data==1){
+                alert("验证码发送成功");
+            }else if(data==-41){
+                alert("手机号为空");
+            }
+        }*/
+    }
+    function yandeng() {
+        var pwd = $("#userpass").val();
+        if(num==parseInt(pwd)){
+            $.get("../user-message/sjh/","hao="+$("#username").val(),hao);
+            function hao(data){
+                if(data>0){
+                    location="../anime-type/list/";
+                }
+            }
+        }else{
+            alert("验证码输入错误");
+        }
+    }
     function qie() {
         $("#yh").text('手机号');
         $("#mm").text('验证码');
-        $("#username").placeholder.text('请输入手机号');
-        $("#userpass").placeholder.text('请输入验证码');
+        $("#username").attr("placeholder","请输入手机号");
+        $("#userpass").attr("placeholder","请输入验证码");
         $("#yan").show();
         $("#yhdl").show();
+        $("#login1").hide();
+        $("#login2").show();
     }
     function huan() {
         $("#yh").text('用户名');
@@ -197,6 +228,8 @@
         $("#userpass").placeholder('请输入密码');
         $("#yan").hide();
         $("#yhdl").hide();
+        $("#login2").hide();
+        $("#login1").show();
     }
 
 </script>

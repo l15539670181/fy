@@ -121,4 +121,23 @@ public class UserMessageController {
     public String admin(){
         return "admin";
     }
+
+    @RequestMapping("sjh")
+    @ResponseBody
+    public String sjh(String hao,HttpSession session){
+        UserMessage userMessage = new UserMessage();
+        userMessage.setUserAdim(hao);
+        userMessage.setUserType(3);
+        userMessage.setUserRegistration(LocalDate.now());
+        userMessage.setUserMoney(0.0);
+        userMessage.setUserVipWhether(0);
+        userMessage.setUserPwd(hao.substring(hao.length()-6));
+        userMessage.setUserHead("2e917f904725d4a234aca6a34371589.jpg");
+        userMessage.setUserName("游客"+hao);
+        if(iUserMessageService.save(userMessage)){
+            session.setAttribute("user",iUserMessageService.finduser(userMessage));
+            return "1";
+        }
+        return "0";
+    }
 }

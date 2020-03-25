@@ -10,6 +10,7 @@
         UPDATE user_message SET user_money=user_money+#{money} WHERE user_id =#{id}
     </insert>
 <!--  购买东西  -->
+
     <insert id="buy">
         UPDATE user_message SET user_money=user_money-#{money} WHERE user_id =#{id}
     </insert>
