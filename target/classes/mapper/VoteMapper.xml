@@ -30,4 +30,28 @@
     <delete id="shan" parameterType="int">
         delete from `vote` where `vote_id`=#{voteId}
     </delete>
+<!--主页面的分类点击-->
+    <resultMap id="finds" type="cn.fy.fy.entity.Vote">
+        <id column="vote_id" property="voteId"></id>
+        <result column="user_id" property="userId"></result>
+        <result column="anime_id" property="animeId"></result>
+        <result column="vote_title" property="voteTitle"></result>
+        <result column="vote_start" property="voteStart"></result>
+        <result column="vote_end" property="voteEnd"></result>
+        <association property="anime" javaType="cn.fy.fy.entity.Anime">
+            <id column="anime_id" property="animeId"></id>
+            <result column="anime_type_id" property="animeTypeId"></result>
+            <result column="anime_name" property="animeName"></result>
+            <result column="anime_introduce" property="animeIntroduce"></result>
+            <association property="animeType" javaType="cn.fy.fy.entity.AnimeType">
+                <id column="anime_type_id" property="animeTypeId"></id>
+                <result column="anime_type_name" property="animeTypeName"></result>
+            </association>
+        </association>
+    </resultMap>
+    <select id="findFenLei" parameterType="cn.fy.fy.entity.Vote" resultMap="finds">
+SELECT  vote.vote_title,vote.vote_id,vote.vote_start,vote.vote_end,vote.user_id,anime.anime_name
+FROM anime,vote
+WHERE anime_type_id=#{id} AND vote.anime_id=anime.anime_id
+    </select>
 </mapper>

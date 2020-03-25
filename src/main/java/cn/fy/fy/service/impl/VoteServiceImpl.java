@@ -1,6 +1,7 @@
 package cn.fy.fy.service.impl;
 
 import cn.fy.fy.entity.Vote;
+import cn.fy.fy.mapper.AnimeTypeMapper;
 import cn.fy.fy.mapper.VoteMapper;
 import cn.fy.fy.service.IVoteService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -39,5 +40,10 @@ public class VoteServiceImpl extends ServiceImpl<VoteMapper, Vote> implements IV
     @Override
     public int chu(int voteId) {
         return vote.shan(voteId);
+    }
+    //主页面的分类点击跳转
+    @Override
+    public List<Vote> findFenLei(Integer id) {
+        return vote.findFenLei(id);
     }
 }

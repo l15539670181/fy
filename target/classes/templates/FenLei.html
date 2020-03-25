@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>投票所属番剧名称</td>
+        <td>投票标题</td>
+        <td>点击参与投票</td>
+    </tr>
+    <tr th:each="findType:${findType}">
+        <td th:text="${findType.anime.animeName}"></td>
+        <td th:text="${findType.voteTitle}"></td>
+        <td><a th:href="@{/anime-type/fenleiTou(id=${findType.voteId})}">参与</a></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,15 +1,16 @@
 package cn.fy.fy.controller;
 
 
-import cn.fy.fy.entity.Activity;
-import cn.fy.fy.entity.AnimeType;
-import cn.fy.fy.entity.Vote;
-import cn.fy.fy.entity.VotePerson;
+import cn.fy.fy.entity.*;
 import cn.fy.fy.service.IActivityService;
 import cn.fy.fy.service.IAnimeTypeService;
+import cn.fy.fy.service.IGiftService;
 import cn.fy.fy.service.IVotePersonService;
+import cn.fy.fy.service.impl.AnimeTypeServiceImpl;
+import cn.fy.fy.service.impl.VoteNeedServiceImpl;
 import cn.fy.fy.service.impl.VotePersonServiceImpl;
 import cn.fy.fy.service.impl.VoteServiceImpl;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -37,6 +38,12 @@ public class AnimeTypeController {
     private IActivityService  apl1;
     @Resource
     private VoteServiceImpl apl2;
+    @Resource
+    private VoteServiceImpl apl3;
+    @Resource
+    private VoteNeedServiceImpl vim;
+    @Resource
+    private IGiftService giftService;
 //   分类+人气排行榜+活动榜
     @RequestMapping("/list")
     public String yemian(Model model)throws Exception{
@@ -50,5 +57,22 @@ public class AnimeTypeController {
         List<Vote> listVotePerson =apl2.findPersonQi();
         model.addAttribute("listVotePerson",listVotePerson);
         return "index";
+    }
+    //主页面的分类点击跳转
+    @RequestMapping("/fenlei")
+    public String fenlei(Integer id,Model model){
+        List<Vote> findType = apl3.findFenLei(id);
+        model.addAttribute("findType",findType);
+        return "FenLei";
+    }
+    //主页面的分类点击跳转之后在跳转投票
+    @RequestMapping("/fenleiTou")
+    public String fenleiTou(Model model,Integer id){
+        List<VoteNeed> voteNeeds = vim.voteneed(id);
+        model.addAttribute("voteNeeds",voteNeeds);
+        //获取礼物
+        List<Gift> giveGift = giftService.list();
+        model.addAttribute("giveGift",giveGift);
+        return "renqi";
     }
 }

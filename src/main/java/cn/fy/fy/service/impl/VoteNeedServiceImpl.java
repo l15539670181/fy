@@ -29,4 +29,8 @@ public class VoteNeedServiceImpl extends ServiceImpl<VoteNeedMapper, VoteNeed> i
     public List<VoteNeed> voteneed(Integer id) {
         return voteNeedMapper.voteneed(id);
     }
+    //投票后人气+1
+    public int addPerson(Integer id) {
+        return voteNeedMapper.addPerson(id);
+    }
 }

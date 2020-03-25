@@ -19,4 +19,6 @@ public interface IVoteNeedService extends IService<VoteNeed> {
     int delvoteid(int voteId);
     //主页人气排行榜跳转
     List<VoteNeed> voteneed(Integer id);
+    //投票后人气+1
+    int addPerson(Integer id);
 }

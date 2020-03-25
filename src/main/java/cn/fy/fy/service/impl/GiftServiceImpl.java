@@ -6,6 +6,8 @@ import cn.fy.fy.service.IGiftService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 /**
  * <p>
  *  服务实现类
@@ -16,5 +18,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class GiftServiceImpl extends ServiceImpl<GiftMapper, Gift> implements IGiftService {
-
+    @Resource
+    GiftMapper gift;
+    //送礼物后总人气+，送礼物人气+
+    @Override
+    public int GiveGift(Double money, Integer VoteId) {
+        return gift.GiveGift(money,VoteId);
+    }
 }

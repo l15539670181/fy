@@ -15,5 +15,6 @@ import java.util.List;
  * @since 2020-03-17
  */
 public interface AnimeMapper extends BaseMapper<Anime> {
+     //查询动漫信息（动漫名字和动漫介绍）
      List<Anime> selectAnime();
 }

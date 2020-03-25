@@ -19,5 +19,6 @@ public interface VoteNeedMapper extends BaseMapper<VoteNeed> {
     int delvoteid(@Param("voteId") int voteId);
     //主页人气排行榜跳转
     List<VoteNeed> voteneed(@Param("id") Integer id);
-
+    //投票后人气+1
+    int addPerson(@Param("id") Integer id);
 }

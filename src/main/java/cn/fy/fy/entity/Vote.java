@@ -47,6 +47,16 @@ public class Vote implements Serializable {
 
     private Date voteEnd;
 
+    private Anime anime;
+
+    public Anime getAnime() {
+        return anime;
+    }
+
+    public void setAnime(Anime anime) {
+        this.anime = anime;
+    }
+
     private  VotePerson votePerson;
 
     public VotePerson getVotePerson() {

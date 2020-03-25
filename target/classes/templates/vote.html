@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.css}">
+    <script th:src="@{/webjars/layui/src/layui.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/layui/src/css/layui.css}">
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.js}"></script>
+</head>
+<body>
+    <table>
+        <tr th:each="list:${list}">
+
+            <td th:text="${list.voteTitle}"></td>
+            <td><a th:href="${#httpServletRequest.getContextPath()+'/vote-need/del/?id='+list.getVoteId()}" >删除</a></td>
+        </tr>
+    </table>
+</body>
+</html>

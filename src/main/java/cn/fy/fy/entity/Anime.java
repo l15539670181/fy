@@ -74,4 +74,5 @@ public class Anime implements Serializable {
     public void setAnimeType(AnimeType animeType) {
         this.animeType = animeType;
     }
+
 }

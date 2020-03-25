@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.fy.fy.mapper.GiftMapper">
-
+<!--    送礼物后总人气+，送礼物人气+-->
+    <update id="GiveGift">
+        UPDATE  vote_person
+SET vote_person.vote_person_money=vote_person.vote_person_money+#{money}*10,vote_person.vote_person_persons=vote_person.vote_person_persons+#{money}*10
+WHERE vote_id=#{id}
+    </update>
 </mapper>

@@ -105,7 +105,13 @@
     <li class="layui-nav-item ">
         <a th:href="${#httpServletRequest.getContextPath()+'/Recharge/chongzhi'}" style="color: black;font-size: 25px;">获得能力<span class="layui-badge-dot"></span></a>
     </li>
+
 </ul>
+
+
+
+
+
 <!--插个div-->
 <div style="height: 20px;width: 100%"></div>
 
@@ -115,7 +121,7 @@
         <!--轮播图左边分类查询-->
         <div style="height: 400px;width: 300px;border: 10px solid pink;margin-left: 80px;background: darkorange">
             <span style="font-size: 40px;margin-left: 35%">分类</span><br>
-            <a th:each="AnimeType : ${listAnimeType}" href="">
+            <a th:each="AnimeType : ${listAnimeType}" th:href="@{/anime-type/fenlei(id=${AnimeType.animeTypeId})}">
                 <span th:text="${AnimeType.animeTypeName}"style="margin-left: 40px;font-size: 20px;color: deeppink"></span>
             </a>
         </div>

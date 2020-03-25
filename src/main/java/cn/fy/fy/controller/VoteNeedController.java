@@ -1,8 +1,10 @@
 package cn.fy.fy.controller;
 
 
+import cn.fy.fy.entity.Gift;
 import cn.fy.fy.entity.Vote;
 import cn.fy.fy.entity.VoteNeed;
+import cn.fy.fy.service.IGiftService;
 import cn.fy.fy.service.IVoteNeedService;
 import cn.fy.fy.service.IVoteService;
 import cn.fy.fy.service.impl.VoteNeedServiceImpl;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
@@ -33,6 +36,10 @@ public class VoteNeedController {
     private IVoteService iVoteService;
     @Resource
     private VoteNeedServiceImpl vim;
+    //暂时放这里
+    @Resource
+    IGiftService giftService;
+
     @RequestMapping("del")
     public String del(int id ){
         int i=iVoteNeedService.delvoteid(id);
@@ -47,6 +54,16 @@ public class VoteNeedController {
     public String Persons(Model model,Integer id){
         List<VoteNeed> voteNeeds = vim.voteneed(id);
         model.addAttribute("voteNeeds",voteNeeds);
+
+        //获取礼物
+        List<Gift> giveGift = giftService.list();
+        model.addAttribute("giveGift",giveGift);
         return "renqi";
+    }
+    //投票后人气+1
+    @RequestMapping("/tph")
+    public String addPerson(String voteNeedId,String giftPrice){
+        vim.addPerson(Integer.valueOf(voteNeedId));
+        return "index";
     }
 }

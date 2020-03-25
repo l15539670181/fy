@@ -1,6 +1,7 @@
 package cn.fy.fy.service;
 
 import cn.fy.fy.entity.AnimeType;
+import cn.fy.fy.entity.Vote;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
@@ -14,4 +15,5 @@ import java.util.List;
  * @since 2020-03-17
  */
 public interface IAnimeTypeService extends IService<AnimeType> {
+
 }

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>不一样额商场</title>
+</head>
+<body>
+    <table>
+        <tr th:each="ListStory:${ListStory}">
+            <td th:text="${ListStory.storeName}"></td>
+        </tr>
+    </table>
+</body>
+</html>

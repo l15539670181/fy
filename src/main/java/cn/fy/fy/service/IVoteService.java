@@ -25,4 +25,6 @@ public interface IVoteService extends IService<Vote> {
     int findid(Integer userId);
     //删除1
     int chu(int voteId);
+    //主页面的分类点击跳转
+    List<Vote> findFenLei(Integer id);
 }
