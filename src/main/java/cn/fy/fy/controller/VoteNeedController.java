@@ -64,6 +64,6 @@ public class VoteNeedController {
     @RequestMapping("/tph")
     public String addPerson(String voteNeedId,String giftPrice){
         vim.addPerson(Integer.valueOf(voteNeedId));
-        return "index";
+        return "redirect:/";
     }
 }

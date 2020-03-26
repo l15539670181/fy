@@ -21,6 +21,12 @@
             <td th:text="${session.user.getUserMoney()}"></td>
             <td th:text="${session.user.getUserVipWhether()}"></td>
         </tr>
+        <tr>
+            <td><a th:href="${#httpServletRequest.getContextPath()+'/activity/huo'}" th:if="${session.user.userType==1}" th:text="发起活动" >发起活动</a></td>
+        </tr>
+        <tr>
+            <td><a th:href="${#httpServletRequest.getContextPath()+'/activity/delhuo'}" th:if="${session.user.userType==1}" th:text="活动管理" >活动管理</a></td>
+        </tr>
 </table>
 </body>
 </html>

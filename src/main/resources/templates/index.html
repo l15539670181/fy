@@ -91,7 +91,7 @@
         <p style="color: pink;font-size: 32px;width: 1300px">爱上Dazzling</p>
     </li>
     <li class="layui-nav-item " lay-unselect="">
-        <a th:href="${#httpServletRequest.getContextPath()+'/user-message/admin'}" style="color: black;font-size: 25px;" th:if="${session.user!=null}" th:text="${session.user.getUserAdim()}"><img src="//t.cn/RCzsdCq" class="layui-nav-img">用户名</a>
+        <a th:href="${#httpServletRequest.getContextPath()+'/user-message/admin'}" style="color: black;font-size: 25px;" th:if="${session.user!=null}" th:text="${session.user.getUserName()}"><img src="//t.cn/RCzsdCq" class="layui-nav-img">用户名</a>
         <a th:href="${#httpServletRequest.getContextPath()+'/user-message/login'}" style="color: black;font-size: 25px;" th:if="${session.user==null}" th:text="登录"><img src="//t.cn/RCzsdCq" class="layui-nav-img">用户名</ a>
         <dl class="layui-nav-child">
             <dd><a href="javascript:;">交易信息</a></dd>

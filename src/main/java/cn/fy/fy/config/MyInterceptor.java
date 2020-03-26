@@ -1,5 +1,6 @@
 package cn.fy.fy.config;
 
+import cn.fy.fy.entity.UserMessage;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -15,7 +16,7 @@ public class MyInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
         HttpSession session = httpServletRequest.getSession();
-        String user = (String) session.getAttribute("user"); //获取登录的session信息
+        UserMessage user = (UserMessage) session.getAttribute("user"); //获取登录的session信息
         if(user!=null){
             return true;
         }
