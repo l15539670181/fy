@@ -23,4 +23,12 @@ public interface UserMessageMapper extends BaseMapper<UserMessage> {
     int chongzhi(@Param("id") Integer id, @Param("money") Double money);
     //购买东西
     int buy(@Param("id") Integer id, @Param("money") Double money);
+
+    List<UserMessage> getByName(UserMessage userMessage);
+    //删除账单
+    int dela(@Param("userId") int userId);
+    //修改账单
+    int updmoney(UserMessage userMessage);
+    //查询修改账单
+    UserMessage selupd(@Param("userId") Integer userId);
 }

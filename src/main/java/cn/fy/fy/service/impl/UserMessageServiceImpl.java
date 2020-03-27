@@ -4,6 +4,7 @@ import cn.fy.fy.entity.UserMessage;
 import cn.fy.fy.mapper.UserMessageMapper;
 import cn.fy.fy.service.IUserMessageService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.apache.catalina.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -37,6 +38,28 @@ public class UserMessageServiceImpl extends ServiceImpl<UserMessageMapper, UserM
     @Override
     public int buy(Integer id,Double money) {
         return userMessageMapper.buy(id,money);
+    }
+
+
+    @Override
+    public List<UserMessage> findByName(UserMessage userMessage){
+        if(userMessage.getUserName()==null){
+            userMessage.setUserName("");
+        }
+        return userMessageMapper.getByName(userMessage);
+    }
+    //删除账单
+    @Override
+    public int delc(int userId) { return userMessageMapper.dela(userId); }
+    //修改账单
+    @Override
+    public int updatemoney(UserMessage userMessage) {
+        return userMessageMapper.updmoney(userMessage);
+    }
+
+    @Override
+    public UserMessage ectupd(Integer userId) {
+        return userMessageMapper.selupd(userId);
     }
 
 }

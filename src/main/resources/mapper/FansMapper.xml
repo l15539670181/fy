@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.fy.fy.mapper.FansMapper">
+    <insert id="add">
+        insert into fans values (#{userId},#{fansId},#{fansName})
+    </insert>
+
+    <delete id="del">
+        delete from fans where fans_id=#{fansId} and user_id=#{userId}
+    </delete>
+    <select id="getByUserId" resultType="cn.fy.fy.entity.Fans">
+        select * from fans where user_id = #{userId}
+    </select>
+</mapper>

@@ -4,8 +4,11 @@
     <select id="getuser"  resultType="cn.fy.fy.entity.UserMessage">
         SELECT * FROM user_message WHERE user_adim = #{userAdim} AND user_pwd =#{userPwd}
     </select>
+    <select id="getByName" resultType="cn.fy.fy.entity.UserMessage">
+        SELECT user_id,user_name FROM user_message WHERE user_name LIKE CONCAT('%',#{userName},'%') AND user_id &lt;&gt; #{userId} AND user_id NOT IN (SELECT concern_id FROM concern)
+    </select>
 
-<!--  用户充值  -->
+    <!--  用户充值  -->
     <insert id="chongzhi">
         UPDATE user_message SET user_money=user_money+#{money} WHERE user_id =#{id}
     </insert>
@@ -13,4 +16,17 @@
     <insert id="buy">
         UPDATE user_message SET user_money=user_money-#{money} WHERE user_id =#{id}
     </insert>
+
+    <!-- 删除账单 -->
+    <delete id="dela" parameterType="int">
+         DELETE FROM `user_message`WHERE user_id=#{userId}
+    </delete>
+    <!--修改账单-->
+    <update id="updmoney" parameterType="cn.fy.fy.entity.UserMessage">
+        update `user_message` set `user_money`=#{userMoney} where user_id=#{userId}
+    </update>
+    <!--    查询修改账单  -->
+    <select id="selupd" resultType="cn.fy.fy.entity.UserMessage">
+        SELECT *FROM `user_message`WHERE user_id=#{userId}
+    </select>
 </mapper>

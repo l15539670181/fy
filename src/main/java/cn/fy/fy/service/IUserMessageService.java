@@ -21,4 +21,13 @@ public interface IUserMessageService extends IService<UserMessage> {
     int chongzhi(Integer id, Double money);
     //购买东西
     int buy(Integer id, Double money);
+
+    List<UserMessage> findByName(UserMessage userMessage);
+
+    //删除账单
+    int delc(int userId);
+    //修改账单
+    int updatemoney(UserMessage userMessage);
+    //查询修改账单
+    UserMessage ectupd(Integer userId);
 }

@@ -199,7 +199,7 @@
             <span style="font-size: 40px;margin-left: 35%">活动</span></br>
             <table>
                 <tr th:each="listActivity : ${listActivity}">
-                    <a th:text="${listActivity.activityName}" href="" style="font-size: 20px;color: deeppink;margin: 20%"></a>
+                    <a th:text="${listActivity.activityName}" th:href="@{/activity/xiang(activityId=${listActivity.activityId})}" style="font-size: 20px;color: deeppink;margin: 20%"></a>
                 </tr>
             </table>
         </div>

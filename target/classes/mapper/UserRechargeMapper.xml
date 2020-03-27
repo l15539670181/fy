@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.fy.fy.mapper.UserRechargeMapper">
-
+    <!--查询账单-->
+    <select id="list" resultMap="renqi">
+       SELECT m.`user_id`,m.`user_name`,m.`user_money`,u.`user_recharge_money`,u.`user_recharge_actualamount`
+        FROM `user_recharge` u,`user_message`m
+        WHERE m.`user_id`=u.`user_id`
+    </select>
+    <resultMap id="renqi" type="cn.fy.fy.entity.UserRecharge">
+        <id column="user_recharge_id" property="userRechargeId"></id>
+        <result column="user_id" property="userId"/>
+        <result column="user_recharge_money" property="userRechargeMoney"/>
+        <result column="user_recharge_actualamount" property="userRechargeActualamount"/>
+        <association property="userMessage" javaType="cn.fy.fy.entity.UserMessage">
+            <id column="user_id" property="userId"></id>
+            <result column="user_type" property="userType"/>
+            <result column="user_adim" property="userAdim"/>
+            <result column="user_pwd" property="userPwd"/>
+            <result column="user_head" property="userHead"/>
+            <result column="user_name" property="userName"/>
+            <result column="user_registration" property="userRegistration"/>
+            <result column="user_money" property="userMoney"/>
+            <result column="user_vip_whether" property="userVipWhether"/>
+        </association>
+    </resultMap>
+    <!--删除账单-->
+    <delete id="delb" parameterType="int">
+         DELETE FROM `user_recharge`WHERE user_id=#{userId}
+    </delete>
 </mapper>

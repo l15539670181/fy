@@ -58,5 +58,12 @@ public class ActivityController {
         }
     }
 
+    @RequestMapping("/xiang")
+    public String xiang(Model model,Activity activity,Integer activityId){
+                activity=iActivityService.getById(activityId);
+                model.addAttribute("activity",activity);
+                return "/jieshao";
+    }
+
 
 }

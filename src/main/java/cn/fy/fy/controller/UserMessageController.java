@@ -1,8 +1,14 @@
 package cn.fy.fy.controller;
 
 
+import cn.fy.fy.entity.Concern;
+import cn.fy.fy.entity.Fans;
 import cn.fy.fy.entity.UserMessage;
+import cn.fy.fy.entity.UserRecharge;
+import cn.fy.fy.service.IConcernService;
+import cn.fy.fy.service.IFansService;
 import cn.fy.fy.service.IUserMessageService;
+import cn.fy.fy.service.IUserRechargeService;
 import cn.fy.fy.util.DragYzm;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.io.FilenameUtils;
@@ -24,6 +30,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -39,7 +46,12 @@ import java.util.Map;
 public class UserMessageController {
     @Resource
     private IUserMessageService iUserMessageService;
-
+    @Resource
+    private IConcernService iConcernService;
+    @Resource
+    private IFansService iFansService;
+    @Resource
+    private IUserRechargeService iUserRechargeService;
     @RequestMapping("/login")
     public String login(){
         return "login";
@@ -118,7 +130,18 @@ public class UserMessageController {
         return JSONObject.toJSONString(result);
     }
     @RequestMapping("admin")
-    public String admin(){
+    public String admin(String userName,Model model,HttpSession session){
+        UserMessage user = (UserMessage) session.getAttribute("user");
+        user.setUserName(userName);
+        List<UserMessage> userList = iUserMessageService.findByName(user);
+        List<Concern> concernList = iConcernService.findByUserId(user.getUserId());
+        List<Fans> fansList = iFansService.findByUserId(user.getUserId());
+        model.addAttribute("fansList",fansList);
+        model.addAttribute("concernList",concernList);
+        model.addAttribute("userList",userList);
+
+        List<UserRecharge> shu=iUserRechargeService.get();
+        model.addAttribute("shu",shu);
         return "admin";
     }
 
@@ -139,5 +162,37 @@ public class UserMessageController {
             return "1";
         }
         return "0";
+    }
+
+    //删除账单操作
+    @RequestMapping("del")
+    public String del(int userId,Model model){
+        int i=iUserMessageService.delc(userId);
+        if(i>0){
+            int b=iUserRechargeService.deld(userId);
+            List<UserRecharge> shu=iUserRechargeService.get();
+            model.addAttribute("shu",shu);
+            return "admin";
+        }
+        return "admin";
+    }
+    //修改账单
+    @RequestMapping("upd")
+    public String upd(UserMessage userMessage,Model model){
+        int i=iUserMessageService.updatemoney(userMessage);
+        List<UserRecharge> shu=iUserRechargeService.get();
+        model.addAttribute("shu",shu);
+        if(i>0){
+            return "admin";
+        }
+        return "redirect:/";
+    }
+
+    //查询修改账单
+    @RequestMapping("sel")
+    public String sel(Integer userIde,Model model){
+        UserMessage u= iUserMessageService.ectupd(userIde);
+        model.addAttribute("u",u);
+        return "updmoney";
     }
 }

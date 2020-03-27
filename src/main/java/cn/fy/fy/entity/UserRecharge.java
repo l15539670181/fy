@@ -36,5 +36,45 @@ public class UserRecharge implements Serializable {
 
     private Double userRechargeActualamount;
 
+    private UserMessage userMessage;
 
+    public UserMessage getUserMessage() {
+        return userMessage;
+    }
+
+    public void setUserMessage(UserMessage userMessage) {
+        this.userMessage = userMessage;
+    }
+
+    public Integer getUserRechargeId() {
+        return userRechargeId;
+    }
+
+    public void setUserRechargeId(Integer userRechargeId) {
+        this.userRechargeId = userRechargeId;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public Double getUserRechargeMoney() {
+        return userRechargeMoney;
+    }
+
+    public void setUserRechargeMoney(Double userRechargeMoney) {
+        this.userRechargeMoney = userRechargeMoney;
+    }
+
+    public Double getUserRechargeActualamount() {
+        return userRechargeActualamount;
+    }
+
+    public void setUserRechargeActualamount(Double userRechargeActualamount) {
+        this.userRechargeActualamount = userRechargeActualamount;
+    }
 }
