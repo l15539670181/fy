@@ -1,57 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8077bac6-b56f-44da-b6a4-9d08c8a89987" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/config/WebsocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/ConcernController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/FansController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/GreetingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Concern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Fans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/ConcernMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/FansMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IConcernService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IFansService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/ConcernServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/FansServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ConcernMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/FansMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addconsumption.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/jieshao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/updmoney.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/fy_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/fy_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/ActivityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/UserRecharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/UserRecharge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/UserMessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/UserMessageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/UserRechargeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/UserRechargeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IUserMessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IUserMessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IUserRechargeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IUserRechargeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/UserMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/UserMessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/UserRechargeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/UserRechargeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMessageMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserRechargeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserRechargeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/ActivityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/ActivityController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/UserMessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/UserMessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/UserRecharge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/UserRecharge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/UserMessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/UserMessageMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/UserRechargeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/UserRechargeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IUserMessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IUserMessageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IUserRechargeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IUserRechargeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/UserMessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/UserMessageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/UserRechargeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/UserRechargeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMessageMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserRechargeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserRechargeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="8077bac6-b56f-44da-b6a4-9d08c8a89987" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,11 +66,11 @@
       <recent name="cn.fy.fy.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\entity" />
       <recent name="E:\Projects\idea\fy\src\main\resources\templates" />
       <recent name="E:\Projects\idea\fy\src\main\resources\mapper" />
       <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\service\impl" />
       <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\service" />
-      <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -161,7 +111,7 @@
       <workItem from="1585191236619" duration="630000" />
       <workItem from="1585191872580" duration="20169000" />
       <workItem from="1585273072424" duration="3473000" />
-      <workItem from="1585276570910" duration="453000" />
+      <workItem from="1585276570910" duration="997000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <created>1585143232206</created>
