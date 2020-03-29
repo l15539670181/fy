@@ -19,6 +19,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registration.addPathPatterns("/vote/**");
         registration.addPathPatterns("/vote-need/**");//所有路径都被拦截
         registration.addPathPatterns("/Recharge/**");
+        registration.addPathPatterns("/anime-type/StoreTiao");
 //        registration.excludePathPatterns(
 //                "/user-message/login",//添加不拦截路径
 //                "/anime-type/list",            //登录

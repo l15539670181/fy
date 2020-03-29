@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8077bac6-b56f-44da-b6a4-9d08c8a89987" name="Default Changelist" comment="" />
+    <list default="true" id="8077bac6-b56f-44da-b6a4-9d08c8a89987" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/xkbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/dan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/star.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/BuyTiaoZhuan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/AnimeTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/AnimeTypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/StoreMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/StoreMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IStoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/StoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/StoreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/renqi.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/renqi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/AnimeTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/AnimeTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/StoreMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/StoreMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IStoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IStoreService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/StoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/StoreServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/renqi.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/renqi.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +77,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,11 +94,11 @@
       <recent name="cn.fy.fy.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\entity" />
+      <recent name="E:\Projects\idea\fy\src\main\resources\static" />
+      <recent name="E:\Projects\idea\fy\src\main\resources\static\css" />
+      <recent name="E:\Projects\idea\fy\src\main\resources\static\img" />
+      <recent name="E:\Projects\idea\fy\src\main\resources\static\js" />
       <recent name="E:\Projects\idea\fy\src\main\resources\templates" />
-      <recent name="E:\Projects\idea\fy\src\main\resources\mapper" />
-      <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\service\impl" />
-      <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -111,7 +139,15 @@
       <workItem from="1585191236619" duration="630000" />
       <workItem from="1585191872580" duration="20169000" />
       <workItem from="1585273072424" duration="3473000" />
-      <workItem from="1585276570910" duration="997000" />
+      <workItem from="1585276570910" duration="2671000" />
+      <workItem from="1585279294164" duration="550000" />
+      <workItem from="1585279868880" duration="2319000" />
+      <workItem from="1585284807419" duration="212000" />
+      <workItem from="1585285025424" duration="3075000" />
+      <workItem from="1585288580712" duration="6084000" />
+      <workItem from="1585297602783" duration="822000" />
+      <workItem from="1585375266944" duration="1371000" />
+      <workItem from="1585458662336" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <created>1585143232206</created>

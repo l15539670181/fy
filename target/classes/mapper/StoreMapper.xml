@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.fy.fy.mapper.StoreMapper">
-
+<!--    主页面下边商城需要获取前n个物品-->
+    <select id="AllWuPin" resultType="cn.fy.fy.entity.Store">
+        SELECT store_id,store_price,store_inventory,store_img,store_name
+FROM store
+WHERE store_exit=1
+LIMIT 0,2
+    </select>
+<!--    单个物品信息-->
+    <select id="WuPin" resultType="cn.fy.fy.entity.Store">
+SELECT store_id,store_price,store_inventory,store_img,store_name
+FROM store
+WHERE store_id=#{id}
+    </select>
+<!--  购买一个商品，库存减少1  -->
+    <update id="kucun">
+        UPDATE store SET store_inventory=store_inventory-1 WHERE store_id =#{id}
+    </update>
 </mapper>

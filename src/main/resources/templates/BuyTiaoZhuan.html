@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>真是怠惰呢！</title>
+</head>
+<body>
+<h1>手办周边都是官方限量哒~小伙伴们只可以购买一次哦，不然其他喜欢的小伙伴就买不了了哦！</h1>
+<table>
+    <tr>
+        <td>物品名称</td>
+        <td>物品价格</td>
+        <td>物品库存</td>
+    </tr>
+    <tr>
+        <td th:text="${ZhiDing.get(0).storeName}"></td>
+        <td th:text="${ZhiDing.get(0).storePrice}"></td>
+        <td th:text="${ZhiDing.get(0).storeInventory}"></td>
+    </tr>
+    <form th:action="@{/anime-type/StoreBuy(id=${ZhiDing.get(0).storeId},userid=${session.user.userId},money=${ZhiDing.get(0).storePrice})}" method="post">
+        <input type="submit" value="购买">
+    </form>
+    <span th:text="${session.user.userId}"></span>
+</table>
+</body>
+</html>

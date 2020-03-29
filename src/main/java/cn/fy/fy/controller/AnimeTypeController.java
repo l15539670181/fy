@@ -2,14 +2,13 @@ package cn.fy.fy.controller;
 
 
 import cn.fy.fy.entity.*;
+import cn.fy.fy.mapper.UserMessageMapper;
 import cn.fy.fy.service.IActivityService;
 import cn.fy.fy.service.IAnimeTypeService;
 import cn.fy.fy.service.IGiftService;
 import cn.fy.fy.service.IVotePersonService;
-import cn.fy.fy.service.impl.AnimeTypeServiceImpl;
-import cn.fy.fy.service.impl.VoteNeedServiceImpl;
-import cn.fy.fy.service.impl.VotePersonServiceImpl;
-import cn.fy.fy.service.impl.VoteServiceImpl;
+import cn.fy.fy.service.impl.*;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -44,6 +43,10 @@ public class AnimeTypeController {
     private VoteNeedServiceImpl vim;
     @Resource
     private IGiftService giftService;
+    @Resource
+    private StoreServiceImpl Store;
+    @Resource
+    private UserMessageMapper userMessageMapper;
 //   分类+人气排行榜+活动榜
     @RequestMapping("/list")
     public String yemian(Model model)throws Exception{
@@ -56,6 +59,9 @@ public class AnimeTypeController {
         //人气排行榜
         List<Vote> listVotePerson =apl2.findPersonQi();
         model.addAttribute("listVotePerson",listVotePerson);
+        //主页下面商城的物品信息
+        List<Store> allStore = Store.AllWuPin();
+        model.addAttribute("allStore",allStore);
         return "index";
     }
     //主页面的分类点击跳转
@@ -74,5 +80,20 @@ public class AnimeTypeController {
         List<Gift> giveGift = giftService.list();
         model.addAttribute("giveGift",giveGift);
         return "renqi";
+    }
+    //主页下面商城的物品信息点击跳转后
+    @RequestMapping("/StoreTiao")
+    public String StoreTiao(Model model,Integer id){
+        //获取指定物品信息
+        List<Store> ZhiDing = Store.WuPin(id);
+        model.addAttribute("ZhiDing",ZhiDing);
+        return "BuyTiaoZhuan";
+    }
+    //主页下面商城的物品信息点击跳转后购买
+    @RequestMapping("/StoreBuy")
+    public String StoreBuy(Integer id,Integer userid,Double money){
+        int user = userMessageMapper.buy(userid,money);
+        int i = Store.kucun(id);
+        return "buy";
     }
 }
