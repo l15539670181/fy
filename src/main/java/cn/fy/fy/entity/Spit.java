@@ -32,5 +32,43 @@ public class Spit implements Serializable {
 
     private String spitSuggest;
 
+    public Integer getSpitId() {
+        return spitId;
+    }
 
+    public void setSpitId(Integer spitId) {
+        this.spitId = spitId;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public Integer getVoteId() {
+        return voteId;
+    }
+
+    public void setVoteId(Integer voteId) {
+        this.voteId = voteId;
+    }
+
+    public String getSpitContent() {
+        return spitContent;
+    }
+
+    public void setSpitContent(String spitContent) {
+        this.spitContent = spitContent;
+    }
+
+    public String getSpitSuggest() {
+        return spitSuggest;
+    }
+
+    public void setSpitSuggest(String spitSuggest) {
+        this.spitSuggest = spitSuggest;
+    }
 }

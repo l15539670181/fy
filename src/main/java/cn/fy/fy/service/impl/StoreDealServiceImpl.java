@@ -31,4 +31,9 @@ public class StoreDealServiceImpl extends ServiceImpl<StoreDealMapper, StoreDeal
     public List<StoreDeal> FindDeal(Integer id) {
         return storeDealMapper.FindDeal(id);
     }
+
+    @Override
+    public int addDeal(StoreDeal storeDeal) {
+        return storeDealMapper.addDeal(storeDeal);
+    }
 }

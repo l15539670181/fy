@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>管理活动</title>
+    <title>Internship Sign In & Sign Up Form a Responsive Widget Template :: xmoban.cn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Internship Sign In & Sign Up Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+    <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{/js/kaptcha.js}"></script>
+    <!-- Custom Theme files -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.css}">
+    <link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" type="text/css" media="all">
+    <link th:href="@{/css/snow.css}" rel="stylesheet" type="text/css" media="all" />
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- //web font -->
 </head>
 <body>
-<table>
-    <tr th:each="listActivity : ${listActivity}">
-        <a th:text="${listActivity.activityName}" href="" style="font-size: 20px;color: deeppink;margin: 20%"></a>
-        <a th:href="${#httpServletRequest.getContextPath()+'/activity/delhuo.html/?activityId='+listActivity.activityId}">删除</a>
-    </tr>
-</table>
+<div class="snow-container">
+    <div class="snow foreground"></div>
+    <div class="snow foreground layered"></div>
+    <div class="snow middleground"></div>
+    <div class="snow middleground layered"></div>
+    <div class="snow background"></div>
+    <div class="snow background layered"></div>
+</div>
+<h1>管理活动</h1>
+<div class="main-agileits">
+    <!--form-stars-here-->
+    <div class="form-w3-agile">
+        <table  height="260" border="" width="600" cellspacing="0" align="center" cellpadding="">
+            <tr th:each="listActivity : ${listActivity}">
+                <td colspan="2">
+                    <a th:text="${listActivity.activityName}" href="" style="font-size: 20px;color: deeppink;margin: 20%"></a>
+                </td>
+                <td>
+                    <a th:href="${#httpServletRequest.getContextPath()+'/activity/delhuo.html/?activityId='+listActivity.activityId}">删除</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--//form-ends-here-->
+<script type="text/javascript" th:src="@{/js/jquery-2.1.4.min.js}"></script>
+
 </body>
 </html>

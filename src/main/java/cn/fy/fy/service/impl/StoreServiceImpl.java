@@ -23,9 +23,20 @@ public class StoreServiceImpl extends ServiceImpl<StoreMapper, Store> implements
     private StoreMapper storeMapper;
     //主页面下边商城需要获取前n个物品
     @Override
-    public List<Store> AllWuPin() {
-        return storeMapper.AllWuPin();
+    public List<Store> AllWuPin(Integer id) {
+        return storeMapper.AllWuPin(id);
     }
+    //2
+    @Override
+    public List<Store> AllWuPin2(Integer id) {
+        return storeMapper.AllWuPin(id);
+    }
+    //3
+    @Override
+    public List<Store> AllWuPin3(Integer id) {
+        return storeMapper.AllWuPin(id);
+    }
+
     //指定物品信息
     @Override
     public List<Store> WuPin(Integer id) {

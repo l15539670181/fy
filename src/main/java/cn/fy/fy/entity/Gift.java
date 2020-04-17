@@ -33,5 +33,35 @@ public class Gift implements Serializable {
 
     private Integer giftPerson;
 
+    public Integer getGiftId() {
+        return giftId;
+    }
 
+    public void setGiftId(Integer giftId) {
+        this.giftId = giftId;
+    }
+
+    public Double getGiftPrice() {
+        return giftPrice;
+    }
+
+    public void setGiftPrice(Double giftPrice) {
+        this.giftPrice = giftPrice;
+    }
+
+    public String getGiftImg() {
+        return giftImg;
+    }
+
+    public void setGiftImg(String giftImg) {
+        this.giftImg = giftImg;
+    }
+
+    public Integer getGiftPerson() {
+        return giftPerson;
+    }
+
+    public void setGiftPerson(Integer giftPerson) {
+        this.giftPerson = giftPerson;
+    }
 }

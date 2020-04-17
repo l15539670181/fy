@@ -19,4 +19,6 @@ public interface StoreDealMapper extends BaseMapper<StoreDeal> {
     List<StoreDeal> FindDeals();
     //查看指定订单（用户看自己）
     List<StoreDeal> FindDeal(@Param("id") Integer id);
+    //添加订单
+    int addDeal(StoreDeal storeDeal);
 }

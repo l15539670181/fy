@@ -51,7 +51,7 @@ public class VoteController {
     }
 
     @RequestMapping("/vote.html")
-    public String Vote(Vote vote,HttpSession session,String [] voteNeedName,int voteConditionVotes){
+    public String Vote(Vote vote,HttpSession session,String [] voteNeedName){
         UserMessage userMessage =(UserMessage) session.getAttribute("user");
         vote.setUserId(userMessage.getUserId());
         int i=iVoteService.findVote(vote);
@@ -61,7 +61,7 @@ public class VoteController {
             voteNeed.setVoteId(id);
             for (int it=0;it<voteNeedName.length;it++){
                 voteNeed.setVoteNeedName(voteNeedName[it]);
-                voteNeed.setVoteConditionVotes(voteConditionVotes);
+                voteNeed.setVoteConditionVotes(0);
                 iVoteNeedService.save(voteNeed);
             }
             return "redirect:/anime-type/list/";

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img th:src="${json.data.cover}">
+<span>名称:</span><span th:text="${json.data.name}"></span><br>
+<span>简介:</span><span th:text="${json.data.introduce}"></span><br>
+<span>类型:</span><span th:text="${json.data.genre}"></span><br>
+<span>国家:</span><span th:text="${json.data.region}"></span><br>
+<span>更新时间:</span><span th:text="${json.data.time}"></span><br>
+<p>章节:</p>
+<ul th:each="list:${json.list}">
+    <li><a th:href="${#httpServletRequest.getContextPath()+'/cartoon/video/?download='+list.download}" th:text="${list.num}"></a></li>
+</ul>
+</body>
+</html>

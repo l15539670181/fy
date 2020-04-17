@@ -5,6 +5,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import org.apache.catalina.User;
 import org.apache.ibatis.annotations.Param;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -18,9 +21,9 @@ import java.util.List;
 public interface IUserMessageService extends IService<UserMessage> {
     UserMessage finduser(UserMessage userMessage);
     //为用户充值
-    int chongzhi(Integer id, Double money);
+    int chongzhi(Integer id, Double money, HttpServletRequest request, HttpServletResponse response)throws IOException;
     //购买东西
-    int buy(Integer id, Double money);
+    int buy(Integer id, Double money, HttpServletRequest request, HttpServletResponse response,Integer storeId)throws IOException;
 
     List<UserMessage> findByName(UserMessage userMessage);
 

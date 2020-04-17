@@ -1,205 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>注册</title>
+    <title>Internship Sign In & Sign Up Form a Responsive Widget Template :: xmoban.cn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Internship Sign In & Sign Up Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
     <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
-    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.css}">
-<!--    <script th:src="@{/webjars/layui/src/layui.js}"></script>-->
-<!--    <link rel="stylesheet" th:href="@{/webjars/layui/src/css/layui.css}">-->
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.js}"></script>
     <script type="text/javascript" th:src="@{/js/kaptcha.js}"></script>
-    <script type="text/javascript" th:src="@{/js/jquery-1.12.4.js}"></script>
-<!--    <script type="text/javascript" src="/js/validate.js"></script>-->
-<!--    <script type="text/javascript" src="/js/register.js"></script>-->
+    <!-- Custom Theme files -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.css}">
+    <link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" type="text/css" media="all">
+    <link th:href="@{/css/snow.css}" rel="stylesheet" type="text/css" media="all" />
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
-    <style type="text/css">
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        div{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -150px 0 0 -150px;
-            width: 300px;
-            height: 300px;
-        }
-        input{
-            width: 298px;
-            height: 30px;
-            border: 1px solid black;
-            margin-top: 30px;
-        }
-        button{
-            width: 298px;
-            height: 30px;
-            border: 1px solid black;
-            margin-top: 30px;
-            box-sizing: content-box;
-            border-radius: 10px;
-        }
-        span{
-            background: red;
-        }
-    </style>
+    <!-- //web font -->
 </head>
-<!--<body th:style="'background-image:url('+@{/image/1.jpg}+');'" >-->
 <body>
-<div>
-     <form action="zhuce" id="insert_modal" class="form-horizontal" method="post" enctype="multipart/form-data">
-            <input type="text" name="userAdim" placeholder="账号" id="adim"  class="form-control">
-             <span class="iom"></span><br>
-            <input type="password" name="userPwd" placeholder="密码" id="pwd"  class="form-control">
-             <span class="iom"></span><br>
-             <input type="file" name="tou"  value="请选择头像" id="tou"  class="form-control">
-             <span class="xiang"></span><br>
-             <input type="text" name="userName" placeholder="用户名字" id="name"  class="form-control">
-             <span class="iom"></span><br>
-             <input type="text" class="form-control" id="kaptcha" name="kaptcha"
-                    placeholder="请输入验证码" style="color: #000000;" /><span
-                     class="help-block" id="yanzheng"></span><br>
-             <img  id="kaptchaImage" src="../kaptcha.jpg" width="100" title="看不清，点击换一张" />
-                 <small >看不清，点击换一张</small><br>
-             <button type="submit"class="btn btn-primary" id="user_insert_btn">提交</button>
-     </form>
+<div class="snow-container">
+    <div class="snow foreground"></div>
+    <div class="snow foreground layered"></div>
+    <div class="snow middleground"></div>
+    <div class="snow middleground layered"></div>
+    <div class="snow background"></div>
+    <div class="snow background layered"></div>
 </div>
-<script>
-    $(function () {
-        // 定义开关变量
-        var flagAdim=false;
-        var flagPwd=false;
-        var flagTou=false;
-        var flagName=false;
 
-        // 找到所在标签元素
-        var $adim = $('#adim');
-        var $pwd=$('#pwd');
-        var $tou=$('#tou');
-        var $name=$('#name');
-        var $submit=$('#user_insert_btn');
+<div class="top-buttons-agileinfo">
+    <a href="login"  class="active">登陆</a><a href="zhuce.html">注册</a>
+</div>
+<h1>注册</h1>
+<div class="main-agileits">
+    <!--form-stars-here-->
+    <div class="form-w3-agile">
+        <h2 class="sub-agileits-w3layouts">Sign In</h2>
+        <form action="zhuce" method="post"  id="insert_modal" class="form-horizontal" enctype="multipart/form-data">
+            <input type="text" name="userAdim" placeholder="账号"  class="form-control" required="">
+            <input type="password" name="userPwd" placeholder="密码" class="form-control" required="">
+            <input type="file" name="tou"  placeholder="请选择头像"   class="form-control" required="" accept="image/*">
+            <input type="text" name="userName" placeholder="用户名字" class="form-control" required="">
+            <input type="text" class="form-control" id="kaptcha" name="kaptcha"
+                   placeholder="请输入验证码" style="color: #000000;"  required=""/><span
+                class="help-block" id="yanzheng"></span><br>
+            <img  id="kaptchaImage" src="../kaptcha.jpg" width="100" title="看不清，点击换一张"/>
+            <small>看不清，点击换一张</small>
+            <div class="submit-w3l">
+                <input type="submit" value="提交" class="btn btn-primary" id="user_insert_btn">
+            </div>
+        </form>
+    </div>
+</div>
+<!--//form-ends-here-->
+<script type="text/javascript" th:src="@{/js/jquery-2.1.4.min.js}"></script>
 
-        // 1.如果失去焦点，则进行检查判断用户名是否合法
-        $adim.blur(function () {
-            // 封装函数 调用函数
-            fnCheckUser()
-        })
-        function fnCheckUser() {
-            // 获取用户输入的数据
-            var vals = $adim.val()
-            // 正则，正则验证用户输入的数据是否合法
-            var re = /^\w{6,20}$/
-
-            if (vals == '') {
-                $adim.next().show().html('账号不能为空')
-                flagAdim=false
-                return
-            }
-            if (re.test(vals)) {
-                // 合法 -- 隐藏报错信息
-                $adim.next().hide()
-                flagAdim=true
-            } else {
-                // 不合法 -- 报错 -- 下面的span标签显示
-                $adim.next().show().html('账号是6-20位数字、字母和下划线！')
-                flagAdim=false
-            }
-        }
-
-        // 2.如果密码框失去焦点，则进行检查判断密码是否合法
-        $pwd.blur(function(){
-            // 封装函数，调用函数
-            fnCheckPwd()
-        })
-        function fnCheckPwd(){
-            // 获取密码框输入的数据
-            var vals=$pwd.val()
-            // 密码正则匹配表达式
-            var rePass = /^[\w!-@#$%^&*]{6,20}$/;
-            // 如果输入框为空，则提示不能为空并return
-            if (vals==''){
-                $pwd.next().show().html('密码不能为空')
-                flagPwd=false
-                return
-            }
-            // 正则验证密码输入是否合法
-            if(rePass.test(vals))
-            {
-                // 如果匹配成功，则隐藏span标签
-                $pwd.next().hide()
-                flagPwd=true
-            }
-            else
-            {
-                // 如果匹配失败，则显示span标签，替换提示信息
-                $pwd.next().show().html('密码是6到20位字母、数字，还可包含@!#$%^&*-字符')
-                flagPwd=false
-            }
-        }
-
-        // 3.判断是否选择头像
-        $tou.blur(function(){
-            // 封装函数，调用函数
-            fnCheckCpwd()
-        })
-        function fnCheckCpwd(){
-            // 获取头像数据
-            var file=$tou.val();
-            if (file == "") {
-                $(".xiang").html("请选择要上传的文件");
-                flagTou=false;
-                return
-            }else{
-                $(".xiang").hide();
-                flagTou=true;
-            }
-
-        }
-
-        // 4.如果用户名失去焦点，则进行检查判断用户名是否合法
-        $name.blur(function(){
-            // 封装函数，调用函数
-            fnCheckEmail()
-        })
-        function fnCheckEmail(){
-            // 获取用户名输入的数据
-            var vals=$name.val()
-            // 用户名正则匹配表达式
-            var reMail = /^[\u4E00-\u9FA5]{2,4}$/;
-            // 如果输入框为空，则提示不能为空并return
-            if (vals==''){
-                $name.next().show().html('用户名为2~4个汉字');
-                flagName=false
-                return
-            }
-            // 正则验证用户名输入是否合法
-            if(reMail.test(vals))
-            {
-                // 如果匹配成功，则隐藏span标签
-                $name.next().hide()
-                flagName=true
-            }
-            else
-            {
-                // 如果匹配失败，则显示span标签，替换提示信息
-                $name.next().show().html('你输入的用户名格式不正确')
-                flagName=false
-            }
-        }
-
-        // 5.所有输入框验证通过再提交注册
-       $submit.click(function(){
-            if(flagAdim && flagPwd && flagTou  && flagName ){
-                alert('OK!');
-            }
-            else{
-                alert('Not OK!');
-                return false
-            }
-        });
-    })
-
-</script>
 </body>
 </html>

@@ -185,18 +185,23 @@
     }
     var num=0;
     function yan() {
-        num= Math.floor(Math.random()*9999+1);
+        num= Math.floor((Math.random() * 9 + 1) * 1000);
         alert(num);
-        /*$.get("UserServlet?opr=send","&num="+num+"&shouji="+$("#username").val(),shu);
+        $.get("../user-message/sendSms/","num="+num+"&number="+$("#username").val(),shu);
         function shu(data){
-            if(data==-4){
+           /* if(data==-4){
                 alert("手机格式不正确");
             }else if(data==1){
                 alert("验证码发送成功");
             }else if(data==-41){
                 alert("手机号为空");
-            }
-        }*/
+            }*/
+           if(data){
+               alert("发送成功")
+           }else {
+               alert("发送失败")
+           }
+        }
     }
     function yandeng() {
         var pwd = $("#userpass").val();

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>话题标题</td>
+        <a th:href="${#httpServletRequest.getContextPath()+'/topic/add.html'}">话题添加</a>
+    </tr>
+    <tr th:each="topicList :${topicList}">
+        <td><a th:href="${#httpServletRequest.getContextPath()+'/topic/topicById/?id='+topicList.getTopicId()}" th:text="${topicList.getTopicTitle()}"></a></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>话题排行榜</td>
+    </tr>
+    <tr th:each="topics:${topics}">
+        <td><a th:href="${#httpServletRequest.getContextPath()+'/topic/topicById/?id='+topics.getTopicId()}" th:text="${topics.getTopicTitle()}"></a></td>
+    </tr>
+</table>
+</body>
+</html>

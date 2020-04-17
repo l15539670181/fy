@@ -2,33 +2,148 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8077bac6-b56f-44da-b6a4-9d08c8a89987" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/xkbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/dan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/star.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/BuyTiaoZhuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/config/AlipayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/CartoonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/PayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/TopicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Topic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/CommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/TopicMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/ICommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/ITopicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/TopicServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/util/RedisTemplateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/TopicMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/Video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/amazeui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/carts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/danmuplayer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/snow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/sty.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/coin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/leimuhaibao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/mark1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/mark2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/richangmanhua.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/success1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/wechatpay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/wodeqingchunmanhua.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/xuenaihaibao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/ys_head2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/zfbpay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/2e917f904725d4a234aca6a34371589.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/amazeui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/carts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/chroma.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/css-doodle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/danmuplayer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/dat.gui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-2.1.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.magnific-popup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/ui-choose.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/music/paojie.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mhxq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/sp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/topic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/topicById.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/topicList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/fy_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/fy_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/ActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/ActivityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/AnimeTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/AnimeTypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/UserMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VipController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteNeedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/controller/VoteNeedController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Gift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Gift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Spit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Spit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/TakeVote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/entity/TakeVote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/AnimeTypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/AnimeTypeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/StoreDealMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/StoreDealMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/StoreMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/StoreMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/UserMessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/mapper/UserMessageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IStoreDealService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IStoreDealService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IStoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IUserMessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/IUserMessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/StoreDealServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/StoreDealServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/StoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/StoreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/UserMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/fy/fy/service/impl/UserMessageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StoreDealMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StoreDealMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/VoteNeedMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VoteNeedMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/8ea97abdd7cc353062c3dca8f0bf8cc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/BuyTiaoZhuan.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/BuyTiaoZhuan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/FenLei.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/FenLei.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chongzhi.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chongzhi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/delhuo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/delhuo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/huo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/huo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jieshao.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jieshao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/renqi.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/renqi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/config/WebMvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/vote1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/vote1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/zhuce.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/zhuce.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/ActivityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/ActivityController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/AnimeTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/AnimeTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/UserMessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/UserMessageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VipController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VipController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteNeedController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/controller/VoteNeedController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/Gift.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/Gift.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/Spit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/Spit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/TakeVote.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/entity/TakeVote.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/StoreDealMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/StoreDealMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/StoreMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/mapper/StoreMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IStoreDealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IStoreDealService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IStoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IStoreService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IUserMessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/IUserMessageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/StoreDealServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/StoreDealServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/StoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/StoreServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/UserMessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/fy/fy/service/impl/UserMessageServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StoreDealMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StoreDealMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/StoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VoteNeedMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/VoteNeedMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/8ea97abdd7cc353062c3dca8f0bf8cc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/FenLei.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/FenLei.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/chongzhi.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/chongzhi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/renqi.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/renqi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/vote1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/vote1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/zhuce.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/zhuce.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,9 +154,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -63,12 +179,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZbjZoRucyGdck9aMVdbBhTsB9P" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -77,7 +197,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,7 +205,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -94,11 +214,11 @@
       <recent name="cn.fy.fy.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Projects\idea\fy\src\main\resources\static" />
-      <recent name="E:\Projects\idea\fy\src\main\resources\static\css" />
-      <recent name="E:\Projects\idea\fy\src\main\resources\static\img" />
       <recent name="E:\Projects\idea\fy\src\main\resources\static\js" />
-      <recent name="E:\Projects\idea\fy\src\main\resources\templates" />
+      <recent name="E:\Projects\idea\fy\src\main\resources\static\css" />
+      <recent name="E:\Projects\idea\fy\src\main\resources\mapper" />
+      <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\util" />
+      <recent name="E:\Projects\idea\fy\src\main\java\cn\fy\fy\service\impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -147,7 +267,37 @@
       <workItem from="1585288580712" duration="6084000" />
       <workItem from="1585297602783" duration="822000" />
       <workItem from="1585375266944" duration="1371000" />
-      <workItem from="1585458662336" duration="298000" />
+      <workItem from="1585458662336" duration="1863000" />
+      <workItem from="1585545862766" duration="5489000" />
+      <workItem from="1585633438902" duration="1268000" />
+      <workItem from="1585729709520" duration="6327000" />
+      <workItem from="1585739977206" duration="6845000" />
+      <workItem from="1585804509278" duration="5109000" />
+      <workItem from="1585817591568" duration="4858000" />
+      <workItem from="1585889509422" duration="8857000" />
+      <workItem from="1585915457781" duration="5000" />
+      <workItem from="1585982402959" duration="2762000" />
+      <workItem from="1586073589527" duration="3897000" />
+      <workItem from="1586144425906" duration="755000" />
+      <workItem from="1586145264167" duration="1402000" />
+      <workItem from="1586224067739" duration="670000" />
+      <workItem from="1586226986119" duration="6544000" />
+      <workItem from="1586233600849" duration="12307000" />
+      <workItem from="1586482094723" duration="1482000" />
+      <workItem from="1586483604275" duration="1624000" />
+      <workItem from="1586485250863" duration="3710000" />
+      <workItem from="1586488991981" duration="436000" />
+      <workItem from="1586489472950" duration="5115000" />
+      <workItem from="1586498645677" duration="2595000" />
+      <workItem from="1586666929388" duration="15000" />
+      <workItem from="1586670942066" duration="667000" />
+      <workItem from="1586756164130" duration="1966000" />
+      <workItem from="1586833449169" duration="9714000" />
+      <workItem from="1586950575856" duration="705000" />
+      <workItem from="1586999389291" duration="1482000" />
+      <workItem from="1587008611221" duration="10972000" />
+      <workItem from="1587050753488" duration="251000" />
+      <workItem from="1587088715574" duration="4120000" />
     </task>
     <task id="LOCAL-00001" summary="2">
       <created>1585143232206</created>
@@ -176,6 +326,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="2" />
     <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>

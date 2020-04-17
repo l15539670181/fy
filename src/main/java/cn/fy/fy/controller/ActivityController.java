@@ -35,7 +35,7 @@ public class ActivityController {
     public String huo(Activity activity){
         boolean i=iActivityService.save(activity);
         if(i){
-            return "redirect:/";
+            return "redirect:/user-message/admin/";
         }else {
             return "huo";
         }
@@ -52,7 +52,7 @@ public class ActivityController {
     public String delete(Integer activityId){
         int i=iActivityService.findActivity(activityId);
         if(i>0){
-            return "redirect:/";
+            return "redirect:/delhuo/";
         }else {
             return "delhuo";
         }

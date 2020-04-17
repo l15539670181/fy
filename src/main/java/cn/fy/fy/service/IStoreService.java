@@ -15,8 +15,12 @@ import java.util.List;
  * @since 2020-03-17
  */
 public interface IStoreService extends IService<Store> {
-    //主页面下边商城需要获取前n个物品
-    List<Store> AllWuPin();
+    //主页面下边商城需要获取前n个物品1
+    List<Store> AllWuPin(Integer id);
+    //主页面下边商城需要获取前n个物品2
+    List<Store> AllWuPin2(Integer id);
+    //主页面下边商城需要获取前n个物品3
+    List<Store> AllWuPin3(Integer id);
     //获取指定物品信息
     List<Store> WuPin(Integer id);
     //买完库存-1

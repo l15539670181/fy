@@ -5,7 +5,19 @@
     <select id="AllWuPin" resultType="cn.fy.fy.entity.Store">
         SELECT store_id,store_price,store_inventory,store_img,store_name
 FROM store
-WHERE store_exit=1
+WHERE store_exit=1 and store_type = #{id}
+LIMIT 0,2
+    </select>
+    <select id="AllWuPin2" resultType="cn.fy.fy.entity.Store">
+        SELECT store_id,store_price,store_inventory,store_img,store_name
+FROM store
+WHERE store_exit=1 and store_type = #{id}
+LIMIT 0,2
+    </select>
+    <select id="AllWuPin3" resultType="cn.fy.fy.entity.Store">
+        SELECT store_id,store_price,store_inventory,store_img,store_name
+FROM store
+WHERE store_exit=1 and store_type = #{id}
 LIMIT 0,2
     </select>
 <!--    单个物品信息-->

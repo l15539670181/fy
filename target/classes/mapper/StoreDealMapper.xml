@@ -41,4 +41,10 @@ WHERE store_deal.user_id=user_message.user_id AND store_deal.store_id=store.stor
 FROM store_deal,user_message,store
 WHERE store_deal.user_id=user_message.user_id AND store_deal.store_id=store.store_id AND user_message.user_id=#{id}
     </select>
+<!--  添加订单  -->
+    <insert id="addDeal" parameterType="cn.fy.fy.entity.StoreDeal">
+                INSERT INTO store_deal(store_deal,user_id,store_id,store_deal_quantity,store_deal_money,store_deal_count)
+VALUES (#{storeDeal},#{userId},#{storeId},1,#{storeDealMoney},1)
+    </insert>
+
 </mapper>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+</head>
+<body>
+<h1>话题标题</h1><br>
+<h2 th:text="${topic.getTopicTitle()}"></h2>
+<h4 th:text="${topic.getTopicContent()}"></h4>
+<input type="hidden" th:value="${topic.getTopicId()}" id="topicId">
+<hr>
+<table id="table">
+    <tr th:each="commentList :${commentList}">
+        <td th:text="${commentList.getCommentContent()}"></td>
+        <td th:if="${commentList.getUserId()==session.user.getUserId()}" th:text="${session.user.getUserAdim()}"></td>
+    </tr>
+</table>
+<input type="hidden" th:value="${#httpServletRequest.getContextPath()}" id="gcp">
+<input type="text" name="comment" id="comment">
+<input type="button" value="发表评论" id="com">
+<script type="text/javascript">
+    $('#com').click(function () {
+        /*"topicId="+$('#topicId').val(),+"&content="+$('#comment').val()*/
+        $.get($('#gcp').val()+"/comment/add",{topicId:$('#topicId').val(),content:$('#comment').val()},function (data) {
+            if(data==1){
+                $("#table").append("<tr><td>"+$("#comment").val()+"</td></tr>")
+                $("#comment").val("");
+            }
+        })
+
+    })
+</script>
+</body>
+</html>

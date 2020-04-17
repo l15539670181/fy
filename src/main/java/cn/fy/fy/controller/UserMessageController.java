@@ -1,22 +1,15 @@
 package cn.fy.fy.controller;
-
-
-import cn.fy.fy.entity.Concern;
-import cn.fy.fy.entity.Fans;
-import cn.fy.fy.entity.UserMessage;
-import cn.fy.fy.entity.UserRecharge;
-import cn.fy.fy.service.IConcernService;
-import cn.fy.fy.service.IFansService;
-import cn.fy.fy.service.IUserMessageService;
-import cn.fy.fy.service.IUserRechargeService;
+import cn.fy.fy.entity.*;
+import cn.fy.fy.service.*;
 import cn.fy.fy.util.DragYzm;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.zhenzi.sms.ZhenziSmsClient;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
@@ -27,11 +20,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * <p>
@@ -51,6 +44,8 @@ public class UserMessageController {
     @Resource
     private IFansService iFansService;
     @Resource
+    private IStoreDealService iStoreDealService;
+    @Resource
     private IUserRechargeService iUserRechargeService;
     @RequestMapping("/login")
     public String login(){
@@ -62,6 +57,8 @@ public class UserMessageController {
         userMessage.setUserPwd(userPwd);
         UserMessage user= iUserMessageService.finduser(userMessage);
         if(user!=null){
+            System.out.println("******************************");
+            System.out.println(user.getUserName());
             session.setAttribute("user",user);
             return "redirect:/";
         }else{
@@ -73,7 +70,6 @@ public class UserMessageController {
         return "zhuce";
     }
 
-    SimpleDateFormat sd = new SimpleDateFormat("yyyy/MM/dd");
     @RequestMapping("/zhuce")
     public String tianjia(UserMessage userMessage, @RequestParam(value ="tou", required = false) MultipartFile tou) throws IllegalStateException, IOException {
         userMessage.setUserType(3);
@@ -96,7 +92,7 @@ public class UserMessageController {
         }
         boolean i=iUserMessageService.save(userMessage);
         if(i==true){
-            return "redirect:/";
+            return "redirect:login";
         }else{
             return " redirect：zhuce.html";
         }
@@ -139,6 +135,9 @@ public class UserMessageController {
         model.addAttribute("fansList",fansList);
         model.addAttribute("concernList",concernList);
         model.addAttribute("userList",userList);
+
+        List<StoreDeal> StoryMin = iStoreDealService.FindDeal(user.getUserId());
+        model.addAttribute("StoryDD",StoryMin);
 
         List<UserRecharge> shu=iUserRechargeService.get();
         model.addAttribute("shu",shu);
@@ -194,5 +193,39 @@ public class UserMessageController {
         UserMessage u= iUserMessageService.ectupd(userIde);
         model.addAttribute("u",u);
         return "updmoney";
+    }
+    @RequestMapping("loginout")
+    public String loginout(HttpSession session){
+        session.removeAttribute("user");
+        return "redirect:/";
+    }
+    @RequestMapping("/sendSms")
+    @ResponseBody
+    public String sendSms(HttpServletRequest request, @RequestParam("number") String number,int num) {
+        boolean flag = false;
+        JSONObject json = null;
+        try {
+            // JSONObject json = null;
+            //生成6位验证码
+            //发送短信
+            ZhenziSmsClient client = new ZhenziSmsClient
+                    ("https://sms_developer.zhenzikj.com", "105010","ef99fd96-bd0f-410c-8ba9-2c626ea9990c");
+            Map<String,String> params = new HashMap<String,String>();
+            params.put("number",number);
+            params.put("message","验证码为:"+num);
+            String result = client.send(params);
+            json = JSONObject.parseObject(result);
+            if(json.getIntValue("code") != 0){
+                //发送短信失败
+                flag = false;
+                // System.out.print(json.getString("data"));
+                // System.out.print(json.getString("message"));
+            }else{
+                flag = true;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return JSONArray.toJSONString(flag);
     }
 }

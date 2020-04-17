@@ -47,5 +47,43 @@ public class TakeVote implements Serializable {
      */
     private Integer giftAmount;
 
+    public Integer getUserId() {
+        return userId;
+    }
 
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public Integer getVoteId() {
+        return voteId;
+    }
+
+    public void setVoteId(Integer voteId) {
+        this.voteId = voteId;
+    }
+
+    public Integer getVoteNeedId() {
+        return voteNeedId;
+    }
+
+    public void setVoteNeedId(Integer voteNeedId) {
+        this.voteNeedId = voteNeedId;
+    }
+
+    public Integer getGiftId() {
+        return giftId;
+    }
+
+    public void setGiftId(Integer giftId) {
+        this.giftId = giftId;
+    }
+
+    public Integer getGiftAmount() {
+        return giftAmount;
+    }
+
+    public void setGiftAmount(Integer giftAmount) {
+        this.giftAmount = giftAmount;
+    }
 }

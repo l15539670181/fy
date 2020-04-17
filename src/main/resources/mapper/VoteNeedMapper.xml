@@ -34,10 +34,9 @@
     </resultMap>
 
 <!--  投票后选项人气+1需要修改两个表  -->
-    <update id="addPerson" parameterType="Integer">
+    <update id="addPerson" parameterType="int">
         UPDATE vote_need,vote_person
 SET vote_need.vote_condition_votes=vote_need.vote_condition_votes+1,vote_person.vote_person_persons=vote_person.vote_person_persons+1
 WHERE vote_need.vote_id=vote_person.vote_id AND vote_need.vote_need_id=#{id}
     </update>
-
 </mapper>

@@ -3,10 +3,7 @@ package cn.fy.fy.controller;
 
 import cn.fy.fy.entity.*;
 import cn.fy.fy.mapper.UserMessageMapper;
-import cn.fy.fy.service.IActivityService;
-import cn.fy.fy.service.IAnimeTypeService;
-import cn.fy.fy.service.IGiftService;
-import cn.fy.fy.service.IVotePersonService;
+import cn.fy.fy.service.*;
 import cn.fy.fy.service.impl.*;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.slf4j.LoggerFactory;
@@ -18,6 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -46,7 +47,7 @@ public class AnimeTypeController {
     @Resource
     private StoreServiceImpl Store;
     @Resource
-    private UserMessageMapper userMessageMapper;
+    private IUserMessageService iUserMessageService;
 //   分类+人气排行榜+活动榜
     @RequestMapping("/list")
     public String yemian(Model model)throws Exception{
@@ -59,9 +60,15 @@ public class AnimeTypeController {
         //人气排行榜
         List<Vote> listVotePerson =apl2.findPersonQi();
         model.addAttribute("listVotePerson",listVotePerson);
-        //主页下面商城的物品信息
-        List<Store> allStore = Store.AllWuPin();
+        //主页下面商城的物品信息1
+        List<Store> allStore = Store.AllWuPin(1);
         model.addAttribute("allStore",allStore);
+        //主页下面商城的物品信息2
+        List<Store> allStore2 = Store.AllWuPin(2);
+        model.addAttribute("allStore2",allStore2);
+        //主页下面商城的物品信息3
+        List<Store> allStore3 = Store.AllWuPin(3);
+        model.addAttribute("allStore3",allStore3);
         return "index";
     }
     //主页面的分类点击跳转
@@ -91,9 +98,10 @@ public class AnimeTypeController {
     }
     //主页下面商城的物品信息点击跳转后购买
     @RequestMapping("/StoreBuy")
-    public String StoreBuy(Integer id,Integer userid,Double money){
-        int user = userMessageMapper.buy(userid,money);
-        int i = Store.kucun(id);
+    public String StoreBuy(Integer storeId, Double money,HttpSession session, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        UserMessage user = (UserMessage) session.getAttribute("user");
+        int is = iUserMessageService.buy(user.getUserId(),money,request,response,storeId);
+
         return "buy";
     }
 }

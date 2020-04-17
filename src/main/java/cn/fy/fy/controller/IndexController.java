@@ -8,5 +8,6 @@ public class IndexController {
     @RequestMapping("/")
     public String index(){
         return "redirect:/anime-type/list/";
+        //return "test";
     }
 }

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+</head>
+<body>
+<img th:src="${json.data.cover}">
+<span>名称:</span><span th:text="${json.data.name}"></span><br>
+<span>状态:</span><span th:text="${json.data.status}"></span><br>
+<span>简介:</span><span th:text="${json.data.introduce}"></span><br>
+<span>作者:</span><span th:text="${json.data.author}"></span><br>
+<span>类型:</span><span th:text="${json.data.tag}"></span><br>
+<span>更新时间:</span><span th:text="${json.data.time}"></span><br>
+<p>章节:</p>
+<ul th:each="list:${json.list}">
+    <li><a th:href="${#httpServletRequest.getContextPath()+'/cartoon/nr?mhurl2='+list.url}" th:text="${list.num}"></a></li>
+</ul>
+</body>
+</html>

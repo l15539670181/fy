@@ -37,6 +37,16 @@ public class Store implements Serializable {
 
     private  String storeName;
 
+    private Integer storeType;
+
+    public Integer getStoreType() {
+        return storeType;
+    }
+
+    public void setStoreType(Integer storeType) {
+        this.storeType = storeType;
+    }
+
     public String getStoreName() {
         return storeName;
     }

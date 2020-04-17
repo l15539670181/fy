@@ -36,6 +36,8 @@ public class VoteNeedController {
     private IVoteService iVoteService;
     @Resource
     private VoteNeedServiceImpl vim;
+    @Resource
+    private VoteServiceImpl apl2;
     //暂时放这里
     @Resource
     IGiftService giftService;
@@ -54,16 +56,19 @@ public class VoteNeedController {
     public String Persons(Model model,Integer id){
         List<VoteNeed> voteNeeds = vim.voteneed(id);
         model.addAttribute("voteNeeds",voteNeeds);
-
+        //人气排行榜
+        List<Vote> listVotePerson =apl2.findPersonQi();
+        model.addAttribute("listVotePerson",listVotePerson);
         //获取礼物
         List<Gift> giveGift = giftService.list();
         model.addAttribute("giveGift",giveGift);
+        model.addAttribute("id",id);
         return "renqi";
     }
     //投票后人气+1
     @RequestMapping("/tph")
-    public String addPerson(String voteNeedId,String giftPrice){
-        vim.addPerson(Integer.valueOf(voteNeedId));
-        return "redirect:/";
+    public String addPerson(Integer voteNeedId,String giftPrice,Integer id){
+        vim.addPerson(voteNeedId);
+        return "redirect:rq?id="+id;
     }
 }

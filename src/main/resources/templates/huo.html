@@ -1,64 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>发布活动</title>
+    <title>Internship Sign In & Sign Up Form a Responsive Widget Template :: xmoban.cn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Internship Sign In & Sign Up Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
     <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
-    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.css}">
-    <script th:src="@{/webjars/layui/src/layui.js}"></script>
-    <link rel="stylesheet" th:href="@{/webjars/layui/src/css/layui.css}">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.js}"></script>
-    <style type="text/css">
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        div{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -150px 0 0 -150px;
-            width: 300px;
-            height: 300px;
-        }
-        input{
-            width: 298px;
-            height: 30px;
-            border: 1px solid black;
-            margin-top: 30px;
-        }
-        button{
-            width: 298px;
-            height: 30px;
-            border: 1px solid black;
-            margin-top: 30px;
-            box-sizing: content-box;
-            border-radius: 10px;
-        }
-    </style>
+    <script type="text/javascript" th:src="@{/js/kaptcha.js}"></script>
+    <!-- Custom Theme files -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.css}">
+    <link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" type="text/css" media="all">
+    <link th:href="@{/css/snow.css}" rel="stylesheet" type="text/css" media="all" />
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- //web font -->
 </head>
 <body>
-<div>
-    <form th:action="${#httpServletRequest.getContextPath()+'/activity/huo.html'}" method="post">
-    <input type="text" name="activityName" placeholder="活动名称" id="name"><span class="dong"></span><br>
-    <input type="text" name="activityAward" placeholder="活动介绍" id="award"><span class="dong"></span><br>
-    <button type="submit" id="fa">发起投票</button>
-    </form>
+<div class="snow-container">
+    <div class="snow foreground"></div>
+    <div class="snow foreground layered"></div>
+    <div class="snow middleground"></div>
+    <div class="snow middleground layered"></div>
+    <div class="snow background"></div>
+    <div class="snow background layered"></div>
 </div>
-<script>
-    $(function () {
-        $("#fa").click(function () {
-             var name=$("#name").val();
-             var award=$("#award").val();
-             if(name!=null && award!=null || name!='' && award!='' ){
-                 $(".dong").hide();
-             }else{
-                 $(".dong").html("不能为空");
-                 return false;
+<h1>发布活动</h1>
+<div class="main-agileits">
+    <!--form-stars-here-->
+    <div class="form-w3-agile">
+        <h2 class="sub-agileits-w3layouts">Post Activity</h2>
+        <form th:action="${#httpServletRequest.getContextPath()+'/activity/huo.html'}" method="post">
+            <input type="text" name="activityName" placeholder="活动名称" required="">
+            <input type="text" name="activityAward" placeholder="活动介绍" required="">
+            <div class="submit-w3l">
+                <input type="submit" value="发布活动">
+            </div>
+        </form>
+    </div>
+</div>
+<!--//form-ends-here-->
+<script type="text/javascript" th:src="@{/js/jquery-2.1.4.min.js}"></script>
 
-             }
-        })
-    })
-</script>
 </body>
 </html>
