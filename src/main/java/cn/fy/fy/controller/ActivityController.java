@@ -52,7 +52,7 @@ public class ActivityController {
     public String delete(Integer activityId){
         int i=iActivityService.findActivity(activityId);
         if(i>0){
-            return "redirect:/delhuo/";
+            return "redirect:delhuo";
         }else {
             return "delhuo";
         }
